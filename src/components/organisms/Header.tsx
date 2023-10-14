@@ -5,7 +5,7 @@ import { Bars3Icon } from '@heroicons/react/20/solid'
 
 const Header = () => {
     return (
-        <header className="bg-white lg:mt-12">
+        <header className="bg-white lg:mt-10">
             <BoxWidth
                 className='hidden lg:grid'
             >
