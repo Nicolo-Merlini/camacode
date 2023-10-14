@@ -1,4 +1,12 @@
 export const theme_chakraUI = {
+    breakpoints: {
+        base: "320px",
+        sm: "640px",
+        md: "768px",
+        lg: "960px",
+        xl: "1280px",
+        "2xl": "1536px",
+    },
     colors: {
         dark: '#423636',
         orange: '#FB9C7E',
@@ -72,7 +80,7 @@ export const theme_chakraUI = {
                 black: {
                     bg: "dark",
                     color: "white",
-                    borderRadius: '10px',
+
                     _hover: {
                         bg: "hover",
                         opacity: 1,

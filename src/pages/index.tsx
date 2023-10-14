@@ -13,40 +13,56 @@ export default function Home() {
         src='/line-green-desktop.png'
         sizes="100vw"
         // Make the image display full width
-        className='hidden lg:flex absolute lg:top-40 xl:top-36 2xl:top-36 z-0'
+        className='hidden xl:flex absolute lg:top-40 xl:top-36 2xl:top-36 -z-10'
       />
+
+
+      <Image
+        width={3000}
+        height={100}
+        priority
+        alt='green-line'
+        src='/line-green-device.png'
+        sizes="100vw"
+        // Make the image display full width
+        className='more-420:hidden absolute top-[200px] xl:top-36 2xl:top-36 -z-10'
+      />
+
+
       <BoxWidth
       >
 
         <Stack
-          spacing={'60px'} direction='column'
+          spacing={['45px', '45px', '45px', '60px']} direction='column'
           minH={'95vh'}
-          className='lg:mt-16'
+          className='mt-24 lg:mt-16'
           color={'dark'}
         >
           <Text
-            textStyle={['hero']}
+            textStyle={['h2', 'h1', 'hero', 'hero']}
+            lineHeight={['35px', '75px', '90px', '90px']}
             fontWeight={'semibold'}
             zIndex={10}
-            className='lg:w-10/12'
+            className='w-10/12 lg:w-10/12'
           >
             Trasformiamo le
             tue idee in codice
           </Text>
           <Text
-            textStyle={'h3'}
+            textStyle={['h5Subtitle', 'h4', 'h3Subtitle', 'h3Subtitle']}
             fontWeight={'medium'}
-            className='lg:w-9/12'
+            className='mt-[45px] sm:mt-0 w-11/12 lg:w-9/12'
           >
             Partiamo dalle tue esigenze per sviluppare software unici e personalizzati. Ti supportiamo con un team di programmatori, solution architects e designer UX/UI, pronti a concretizzare il tuo progetto.
           </Text>
           <Button
-            variant={'white'}
+            variant={['black', 'black', 'black', 'white']}
+            borderRadius={'100px'}
             width={'fit-content'}
-            size={'lg'}
+            size={['md', 'lg']}
           >
             <Text
-              textStyle={'h3'}
+              textStyle={['h5', 'h5', 'h3']}
               fontWeight={'medium'}
             >
               Paghi solo se soddisfatto
