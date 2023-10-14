@@ -13,7 +13,7 @@ export default function Home() {
         src='/line-green-desktop.png'
         sizes="100vw"
         // Make the image display full width
-        className='hidden xl:flex absolute lg:top-40 xl:top-[10px] 2xl:top-[140px] -z-10'
+        className='hidden xl:flex absolute lg:top-40 xl:top-[140px] 2xl:top-[140px] -z-10'
       />
 
 
@@ -33,7 +33,7 @@ export default function Home() {
       >
 
         <Stack
-          spacing={['45px', '45px', '45px', '60px']} direction='column'
+          spacing={['45px', '45px', '45px', '45px']} direction='column'
           minH={'95vh'}
           className='mt-24 lg:mt-16'
           color={'dark'}
@@ -51,7 +51,7 @@ export default function Home() {
           <Text
             textStyle={['h5Subtitle', 'h4', 'h3Subtitle', 'h3Subtitle', 'h3Subtitle', 'h4Subtitle']}
             fontWeight={'medium'}
-            className='mt-[45px] sm:mt-0 w-11/12 lg:w-9/12'
+            className='mt-[45px] sm:mt-[10px] lg:mt-[30px] w-11/12 lg:w-9/12'
           >
             Partiamo dalle tue esigenze per sviluppare software unici e personalizzati. Ti supportiamo con un team di programmatori, solution architects e designer UX/UI, pronti a concretizzare il tuo progetto.
           </Text>
