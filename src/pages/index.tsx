@@ -10,25 +10,28 @@ export default function Home() {
         height={500}
         priority
         alt='green-line'
-        src='https://www.datocms-assets.com/106122/1697209363-line-green.png'
+        src='/line-green-desktop.png'
         sizes="100vw"
         // Make the image display full width
-        className='absolute lg:top-40 xl:top-36 2xl:top-36 z-0'
+        className='hidden lg:flex absolute lg:top-40 xl:top-36 2xl:top-36 z-0'
       />
-      <BoxWidth>
+      <BoxWidth
+      >
 
         <Stack
           spacing={'60px'} direction='column'
           minH={'95vh'}
           className='lg:mt-16'
+          color={'dark'}
         >
           <Text
             textStyle={['hero']}
             fontWeight={'semibold'}
-            color={'dark'}
             zIndex={10}
+            className='lg:w-10/12'
           >
-            Realizziamo software personalizzati
+            Trasformiamo le
+            tue idee in codice
           </Text>
           <Text
             textStyle={'h3'}

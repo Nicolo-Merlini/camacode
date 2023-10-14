@@ -5,14 +5,18 @@ import BoxWidth from '../atoms/BoxWidth'
 const Header = () => {
     return (
         <header className="bg-white lg:mt-12">
-
-            <BoxWidth>
+            <BoxWidth
+                className='hidden lg:flex'
+            >
                 <nav className="
            
            flex  mx-0 justify-between" >
                     <HStack spacing='50px'>
                         <Box
                             cursor={'pointer'}
+                            _active={{
+                                transform: 'scale(0.98)',
+                            }}
                         >
                             <Text
                                 textStyle={'h4'}
@@ -23,6 +27,9 @@ const Header = () => {
                         </Box>
                         <Box
                             cursor={'pointer'}
+                            _active={{
+                                transform: 'scale(0.98)',
+                            }}
                         >
                             <Text
                                 textStyle={'h4'}
@@ -33,6 +40,9 @@ const Header = () => {
                         </Box>
                         <Box
                             cursor={'pointer'}
+                            _active={{
+                                transform: 'scale(0.98)',
+                            }}
                         >
                             <Text
                                 textStyle={'h4'}
@@ -43,6 +53,9 @@ const Header = () => {
                         </Box>
                         <Box
                             cursor={'pointer'}
+                            _active={{
+                                transform: 'scale(0.98)',
+                            }}
                         >
                             <Text
                                 textStyle={'h4'}
@@ -53,6 +66,9 @@ const Header = () => {
                         </Box>
                         <Box
                             cursor={'pointer'}
+                            _active={{
+                                transform: 'scale(0.98)',
+                            }}
                         >
                             <Text
                                 textStyle={'h4'}
@@ -79,7 +95,14 @@ const Header = () => {
                 </nav>
 
             </BoxWidth>
+            <Box
+                className='flex lg:hidden'
+            >
+                <Box>
 
+                </Box>
+
+            </Box>
         </header>
     )
 }

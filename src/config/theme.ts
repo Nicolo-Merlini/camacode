@@ -18,7 +18,6 @@ export const theme_chakraUI = {
         hero: {
             fontSize: '85px',
             lineHeight: '95px',
-
         },
         h1: {
             fontSize: '70px',
