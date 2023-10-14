@@ -46,6 +46,10 @@ export const theme_chakraUI = {
         h4: {
             fontSize: '20px',
         },
+        h4Subtitle: {
+            fontSize: '20px',
+            lineHeight: '35px',
+        },
         h5: {
             fontSize: '15px',
         },

@@ -49,7 +49,7 @@ export default function Home() {
             tue idee in codice
           </Text>
           <Text
-            textStyle={['h5Subtitle', 'h4', 'h3Subtitle', 'h3Subtitle']}
+            textStyle={['h5Subtitle', 'h4', 'h3Subtitle', 'h3Subtitle', 'h3Subtitle', 'h4Subtitle']}
             fontWeight={'medium'}
             className='mt-[45px] sm:mt-0 w-11/12 lg:w-9/12'
           >
