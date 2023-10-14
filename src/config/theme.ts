@@ -24,8 +24,8 @@ export const theme_chakraUI = {
             fontSize: '100px',
         },
         hero: {
-            fontSize: '85px',
-            lineHeight: '95px',
+            fontSize: '80px',
+            lineHeight: '90px',
         },
         h1: {
             fontSize: '70px',
@@ -50,7 +50,6 @@ export const theme_chakraUI = {
             fontSize: '20px',
             lineHeight: '35px',
         },
-
         h5: {
             fontSize: '15px',
         },
