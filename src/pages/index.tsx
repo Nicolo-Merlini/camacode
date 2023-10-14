@@ -1,4 +1,5 @@
 import BoxWidth from '@/components/atoms/BoxWidth'
+import Paragraph from '@/components/atoms/Paragraph'
 import { Box, Button, Stack, Text, VStack } from '@chakra-ui/react'
 import Image from 'next/image'
 
@@ -29,9 +30,7 @@ export default function Home() {
       />
 
 
-      <BoxWidth
-      >
-
+      <BoxWidth>
         <Stack
           spacing={['45px', '45px', '45px', '40px']} direction='column'
           minH={'95vh'}
@@ -70,7 +69,14 @@ export default function Home() {
           </Button>
         </Stack>
       </BoxWidth>
-      <BoxWidth>
+      <BoxWidth
+      >
+        <Paragraph
+          title='Servizi'
+          subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.'
+        >
+
+        </Paragraph>
 
       </BoxWidth>
     </>
