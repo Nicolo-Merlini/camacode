@@ -13,7 +13,7 @@ export default function Home() {
         src='/line-green-desktop.png'
         sizes="100vw"
         // Make the image display full width
-        className='hidden xl:flex absolute lg:top-40 xl:top-[130px] 2xl:top-[200px] -z-10'
+        className='hidden xl:flex absolute lg:top-40 xl:top-[10px] 2xl:top-[140px] -z-10'
       />
 
 
