@@ -37,11 +37,11 @@ export const theme_chakraUI = {
             fontSize: '30px',
         },
         h3: {
-            fontSize: '22px',
+            fontSize: '25px',
         },
         h3Subtitle: {
-            fontSize: '22px',
-            lineHeight: '38px',
+            fontSize: '25px',
+            lineHeight: '40px',
         },
         h4: {
             fontSize: '20px',
@@ -50,6 +50,7 @@ export const theme_chakraUI = {
             fontSize: '20px',
             lineHeight: '35px',
         },
+
         h5: {
             fontSize: '15px',
         },

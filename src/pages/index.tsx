@@ -13,7 +13,7 @@ export default function Home() {
         src='/line-green-desktop.png'
         sizes="100vw"
         // Make the image display full width
-        className='hidden xl:flex absolute lg:top-40 xl:top-[140px] 2xl:top-[140px] -z-10'
+        className='hidden xl:flex absolute lg:top-40 xl:top-[150px] 2xl:top-[140px] -z-10'
       />
 
 
@@ -33,7 +33,7 @@ export default function Home() {
       >
 
         <Stack
-          spacing={['45px', '45px', '45px', '45px']} direction='column'
+          spacing={['45px', '45px', '45px', '40px']} direction='column'
           minH={'95vh'}
           className='mt-24 lg:mt-16'
           color={'dark'}
@@ -49,9 +49,9 @@ export default function Home() {
             tue idee in codice
           </Text>
           <Text
-            textStyle={['h5Subtitle', 'h4', 'h3Subtitle', 'h3Subtitle', 'h3Subtitle', 'h4Subtitle']}
+            textStyle={['h5Subtitle', 'h4Subtitle', 'h4Subtitle', 'h4Subtitle', 'h4Subtitle', 'h4Subtitle']}
             fontWeight={'medium'}
-            className='mt-[45px] sm:mt-[10px] lg:mt-[30px] w-11/12 lg:w-9/12'
+            className='mt-[45px] sm:mt-[10px] lg:mt-[40px] w-11/12 lg:w-9/12'
           >
             Partiamo dalle tue esigenze per sviluppare software unici e personalizzati. Ti supportiamo con un team di programmatori, solution architects e designer UX/UI, pronti a concretizzare il tuo progetto.
           </Text>
@@ -62,7 +62,7 @@ export default function Home() {
             size={['md', 'lg']}
           >
             <Text
-              textStyle={['h5', 'h5', 'h3']}
+              textStyle={['h5', 'h5', 'h4']}
               fontWeight={'medium'}
             >
               Paghi solo se soddisfatto
