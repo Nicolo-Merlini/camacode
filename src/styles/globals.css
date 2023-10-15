@@ -37,8 +37,7 @@ div {
 }
 
 ::selection {
-  /* Change highlight background color to black */
+  /* Change highlight background color and text */
   background: #48fb47;
-  /* Change highlight text color to red */
   color: #423636;
 }
