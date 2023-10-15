@@ -5,6 +5,7 @@ import { Box, Button, Stack, Text, VStack } from "@chakra-ui/react";
 import Image from 'next/image'
 import skimming from '../../public/skimming.png'
 import BoxText from "@/components/atoms/BoxText";
+import BoxGrid from "@/components/atoms/BoxGrid";
 
 export default function Home() {
   return (
@@ -89,16 +90,11 @@ export default function Home() {
           subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
         >
           <Stack
-            spacing={["45px", "45px", "45px", "40px"]}
+            spacing={["45px", "45px", "45px", "60px"]}
             direction="column"
             my={'100px'}
           >
-            <Box
-              display={['grid', 'grid', 'grid', 'flex']}
-              justifyContent={'space-between'}
-              gap={'20px'}
-              w={'full'}
-            >
+            <BoxGrid>
               <BoxText
                 title="Web App"
                 subtitle="Realizziamo Web App esteticamente sorprendenti e altamente funzionali, garantendo elevate performance, sicurezza e scalabilità."
@@ -112,14 +108,30 @@ export default function Home() {
                   src={skimming}
                   className="pl-[35px] lg:pl-[100px]w-[full] lg:w-[400px] xl:w-[500px] my-[35px] lg:my-[100px] float-right"
                 />
-
               </WhiteBox>
               <BoxText
                 title="Web App"
                 subtitle="Realizziamo Web App esteticamente sorprendenti e altamente funzionali, garantendo elevate performance, sicurezza e scalabilità."
                 className="hidden lg:flex lg:w-1/2"
               />
-            </Box>
+            </BoxGrid>
+            <BoxGrid>
+              <BoxText
+                title="Mobile App"
+                subtitle="Sviluppiamo app sia per Android che per IOS. Abbiamo esperienza nella costruzione di: e-commerce, app aziendali e gestionali."
+                className="hidden lg:flex lg:w-3/4"
+              />
+              <WhiteBox
+                className="lg:w-1/4"
+              >
+                <Image
+                  alt="Skimming"
+                  src={skimming}
+                  className="pl-[35px] lg:pl-[100px]w-[full] lg:w-[400px] xl:w-[500px] my-[35px] lg:my-[100px] float-right"
+                />
+              </WhiteBox>
+
+            </BoxGrid>
           </Stack>
 
 
