@@ -1,7 +1,9 @@
 import BoxWidth from "@/components/atoms/BoxWidth";
 import Paragraph from "@/components/atoms/Paragraph";
+import WhiteBox from "@/components/atoms/WhiteBox";
 import { Box, Button, Stack, Text, VStack } from "@chakra-ui/react";
-import Image from "next/image";
+import Image from 'next/image'
+import skimming from '../../public/skimming.png'
 
 export default function Home() {
   return (
@@ -84,7 +86,39 @@ export default function Home() {
         <Paragraph
           title="Servizi"
           subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
-        ></Paragraph>
+        >
+          <Stack
+            spacing={["45px", "45px", "45px", "40px"]}
+            direction="column"
+            my={'100px'}
+          >
+            <Box
+              display={'flex'}
+              justifyContent={'space-between'}
+              gap={'20px'}
+
+            >
+              <WhiteBox
+                className="w-1/2"
+              >
+                <Image
+                  alt="Skimming"
+                  width={500}
+                  src={skimming}
+                  className="ml-20 lg:w-[400px] xl:w-[500px] my-[100px] float-right"
+
+                />
+              </WhiteBox>
+              <WhiteBox
+                className="w-1/2"
+              >
+
+              </WhiteBox>
+            </Box>
+          </Stack>
+
+
+        </Paragraph>
       </BoxWidth>
     </>
   );
