@@ -36,6 +36,9 @@ export const theme_chakraUI = {
     h1: {
       fontSize: "70px",
     },
+    h1Title: {
+      fontSize: "60px",
+    },
     h1Mobile: {
       fontSize: "2.1rem",
     },

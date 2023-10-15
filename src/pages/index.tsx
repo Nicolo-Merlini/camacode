@@ -4,6 +4,7 @@ import WhiteBox from "@/components/atoms/WhiteBox";
 import { Box, Button, Stack, Text, VStack } from "@chakra-ui/react";
 import Image from 'next/image'
 import skimming from '../../public/skimming.png'
+import BoxText from "@/components/atoms/BoxText";
 
 export default function Home() {
   return (
@@ -93,27 +94,31 @@ export default function Home() {
             my={'100px'}
           >
             <Box
-              display={'flex'}
+              display={['grid', 'grid', 'grid', 'flex']}
               justifyContent={'space-between'}
               gap={'20px'}
-
+              w={'full'}
             >
+              <BoxText
+                title="Web App"
+                subtitle="Realizziamo Web App esteticamente sorprendenti e altamente funzionali, garantendo elevate performance, sicurezza e scalabilità."
+                className="lg:hidden py-[50px]"
+              />
               <WhiteBox
-                className="w-1/2"
+                className="lg:w-1/2"
               >
                 <Image
                   alt="Skimming"
-                  width={500}
                   src={skimming}
-                  className="ml-20 lg:w-[400px] xl:w-[500px] my-[100px] float-right"
-
+                  className="pl-[35px] lg:pl-[100px]w-[full] lg:w-[400px] xl:w-[500px] my-[35px] lg:my-[100px] float-right"
                 />
-              </WhiteBox>
-              <WhiteBox
-                className="w-1/2"
-              >
 
               </WhiteBox>
+              <BoxText
+                title="Web App"
+                subtitle="Realizziamo Web App esteticamente sorprendenti e altamente funzionali, garantendo elevate performance, sicurezza e scalabilità."
+                className="hidden lg:flex lg:w-1/2"
+              />
             </Box>
           </Stack>
 
