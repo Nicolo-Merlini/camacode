@@ -27,11 +27,14 @@ export const theme_chakraUI = {
             fontSize: '80px',
             lineHeight: '90px',
         },
+        heroMobile: {
+            fontSize: '50px',
+        },
         h1: {
             fontSize: '70px',
         },
         h1Mobile: {
-            fontSize: '60px',
+            fontSize: '2.1rem',
         },
         h2: {
             fontSize: '30px',

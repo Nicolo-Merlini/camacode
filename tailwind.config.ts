@@ -14,6 +14,7 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       screens: {
+        'more-320': { min: '320px' },
         'more-420': { min: '420px' },
       },
       fontFamily: {

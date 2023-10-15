@@ -17,7 +17,6 @@ export default function Home() {
         className='hidden xl:flex absolute lg:top-40 xl:top-[150px] 2xl:top-[140px] -z-10'
       />
 
-
       <Image
         width={3000}
         height={100}
@@ -26,7 +25,7 @@ export default function Home() {
         src='/line-green-device.png'
         sizes="100vw"
         // Make the image display full width
-        className='more-420:hidden absolute top-[200px] xl:top-36 2xl:top-36 -z-10'
+        className='hidden more-320:flex more-420:hidden absolute top-[160px] xl:top-36 2xl:top-36 -z-10'
       />
 
 
@@ -34,15 +33,15 @@ export default function Home() {
         <Stack
           spacing={['45px', '45px', '45px', '40px']} direction='column'
           minH={'95vh'}
-          className='mt-24 lg:mt-16'
+          className='mt-[60px] md:mt-24 lg:mt-16'
           color={'dark'}
         >
           <Text
-            textStyle={['h2', 'h1', 'hero', 'hero']}
-            lineHeight={['35px', '75px', '90px', '90px']}
-            fontWeight={'semibold'}
+            textStyle={['h1Mobile', 'heroMobile', 'h1', 'hero']}
+            lineHeight={['35px', '65px', '80px', '90px']}
+            fontWeight={['semibold', 'semibold', 'semibold', '600']}
             zIndex={10}
-            className='w-10/12 lg:w-10/12'
+            className='w-10/12 lg:w-10/12 lg:mb-[40px]'
           >
             Trasformiamo le
             tue idee in codice
@@ -50,7 +49,7 @@ export default function Home() {
           <Text
             textStyle={['h5Subtitle', 'h4Subtitle', 'h4Subtitle', 'h4Subtitle', 'h4Subtitle', 'h4Subtitle']}
             fontWeight={'medium'}
-            className='mt-[45px] sm:mt-[10px] lg:mt-[40px] w-11/12 lg:w-9/12'
+            className='mt-[10px] more-320:mt-[45px] more-420:mt-[0px]  w-11/12 lg:w-9/12'
           >
             Partiamo dalle tue esigenze per sviluppare software unici e personalizzati. Ti supportiamo con un team di programmatori, solution architects e designer UX/UI, pronti a concretizzare il tuo progetto.
           </Text>

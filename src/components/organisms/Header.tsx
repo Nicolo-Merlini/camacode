@@ -9,8 +9,8 @@ const Header = () => {
             <BoxWidth
                 className='hidden lg:grid'
             >
-                <nav className="
-           flex  mx-0 justify-between" >
+                <nav
+                    className="flex  mx-0 justify-between" >
                     <HStack spacing='50px'>
                         <Box
                             cursor={'pointer'}
@@ -21,6 +21,7 @@ const Header = () => {
                             <Text
                                 textStyle={'h4'}
                                 fontWeight={'semibold'}
+                                userSelect={'none'}
                             >
                                 Home
                             </Text>
@@ -34,6 +35,7 @@ const Header = () => {
                             <Text
                                 textStyle={'h4'}
                                 fontWeight={'semibold'}
+                                userSelect={'none'}
                             >
                                 Servizi
                             </Text>
@@ -47,6 +49,7 @@ const Header = () => {
                             <Text
                                 textStyle={'h4'}
                                 fontWeight={'semibold'}
+                                userSelect={'none'}
                             >
                                 Tech Stack
                             </Text>
@@ -60,6 +63,7 @@ const Header = () => {
                             <Text
                                 textStyle={'h4'}
                                 fontWeight={'semibold'}
+                                userSelect={'none'}
                             >
                                 Proggetti
                             </Text>
@@ -73,12 +77,11 @@ const Header = () => {
                             <Text
                                 textStyle={'h4'}
                                 fontWeight={'semibold'}
+                                userSelect={'none'}
                             >
                                 Chi Siamo
                             </Text>
                         </Box>
-
-
                     </HStack>
                     <Button
                         variant={'black'}
@@ -94,7 +97,6 @@ const Header = () => {
 
                     </Button>
                 </nav>
-
             </BoxWidth>
             <Box
                 className='flex lg:hidden justify-between m-[20px]'
