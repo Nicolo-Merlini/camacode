@@ -35,3 +35,10 @@ a {
 div {
   -webkit-tap-highlight-color: transparent;
 }
+
+::selection {
+  /* Change highlight background color to black */
+  background: #48fb47;
+  /* Change highlight text color to red */
+  color: #423636;
+}
