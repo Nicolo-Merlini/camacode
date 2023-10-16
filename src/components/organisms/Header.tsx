@@ -5,7 +5,7 @@ import { Bars3Icon } from '@heroicons/react/20/solid'
 import { Cancel } from 'iconoir-react'
 
 const Header = () => {
-    const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(true)
+    const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false)
     const closeDrawer = () => {
         setIsDrawerOpen(false)
     }
