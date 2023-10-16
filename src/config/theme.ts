@@ -39,6 +39,9 @@ export const theme_chakraUI = {
     h1Title: {
       fontSize: "60px",
     },
+    h1TitleMobile: {
+      fontSize: "50px",
+    },
     h1Mobile: {
       fontSize: "2.1rem",
     },
@@ -64,7 +67,7 @@ export const theme_chakraUI = {
     },
     h5Subtitle: {
       fontSize: "15px",
-      lineHeight: "22px",
+      lineHeight: "25px",
     },
   },
   fontWeights: {

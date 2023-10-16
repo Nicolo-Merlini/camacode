@@ -12,6 +12,7 @@ import eCommerceMobile from '../../public/e-commerce-mobile.png'
 
 import BoxText from "@/components/atoms/BoxText";
 import BoxGrid from "@/components/atoms/BoxGrid";
+import Progetti from "@/components/molecules/Progetti";
 
 export default function Home() {
   return (
@@ -98,7 +99,7 @@ export default function Home() {
           <Stack
             spacing={["20px", "20px", "20px", "60px"]}
             direction="column"
-            my={'100px'}
+            my={['50px', '50px', '50px', '100px']}
           >
             <BoxGrid>
               <BoxText
@@ -177,6 +178,25 @@ export default function Home() {
                 className="w-full  py-[50px] xl:px-[80px]"
               />
             </WhiteBox>
+
+          </Stack>
+
+
+        </Paragraph>
+      </BoxWidth>
+      <BoxWidth>
+        <Paragraph
+          title="Progetti"
+          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
+          className="mt-[100px] md:mt-[150px] lg:mt-[250px]"
+        >
+          <Stack
+            spacing={["20px", "20px", "20px", "60px"]}
+            direction="column"
+            my={['50px', '50px', '50px', '100px']}
+          >
+
+            <Progetti />
 
           </Stack>
 

@@ -10,16 +10,16 @@ const BoxText: FC<{ title: string, subtitle: string, className?: string }> = ({ 
         >
             <Box>
                 <Text
-                    textStyle={['h2', 'h2', 'h1Mobile', 'h1', 'h1']}
+                    textStyle={['h2', 'h2', 'h1Mobile', 'h1TitleMobile', 'h1Title']}
                     fontWeight={'semibold'}
                     color={'dark'}
                 >
                     {title}
                 </Text>
                 <Text
-                    mt={['10px', '10px', '25px', '25px', '25px']}
+                    mt={['10px', '20px', '25px', '25px', '25px']}
                     textStyle={['h5Subtitle', 'h4Subtitle', 'h4Subtitle', 'h3Subtitle', 'h3Subtitle']}
-                    fontWeight={['500', '500', '400', '400', '400']}
+                    fontWeight={['400', '400', '400', '400', '400']}
                     color={'gray700'}
                 >
                     {subtitle}
