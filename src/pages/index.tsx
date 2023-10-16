@@ -202,7 +202,7 @@ export default function Home() {
         <Paragraph
           title="Paghi solo se soddisfatto"
           subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
-          className="mt-[100px] md:mt-[150px] lg:mt-[250px]"
+          className="mt-[100px] md:mt-[150px] lg:mt-[250px] "
         >
           <Stack
             spacing={["20px", "20px", "20px", "60px"]}
