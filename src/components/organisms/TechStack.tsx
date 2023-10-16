@@ -14,7 +14,7 @@ const TechStack = () => {
         src="/line-green-desktop.png"
         sizes="100vw"
         // Make the image display full width
-        className="hidden md:flex absolute top-[300px] -z-0"
+        className="hidden md:flex absolute top-[400px] -z-0"
       />
 
       <Image
@@ -25,7 +25,7 @@ const TechStack = () => {
         src="/line-green-device.png"
         sizes="100vw"
         // Make the image display full width
-        className="flex md:hidden absolute top-[300px] -z-0"
+        className="flex md:hidden absolute top-[450px] -z-0"
       />
 
       <Box
