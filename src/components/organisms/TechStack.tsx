@@ -30,8 +30,10 @@ const TechStack = () => {
 
       <Box
         bg="gray200"
-        paddingTop={[10, 10, 20]}
+        paddingTop={"180px"}
         paddingBottom={10}
+        marginTop={-200}
+        zIndex={0}
         width={"full"}
       >
         <BoxWidth>
