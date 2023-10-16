@@ -38,12 +38,17 @@ export const theme_chakraUI = {
     },
     h1Title: {
       fontSize: "60px",
+      lineHeight: "70px",
+
     },
     h1TitleMobile: {
       fontSize: "50px",
+      lineHeight: "60px",
     },
     h1Mobile: {
       fontSize: "2.1rem",
+      lineHeight: "2.5rem",
+
     },
     h2: {
       fontSize: "30px",
