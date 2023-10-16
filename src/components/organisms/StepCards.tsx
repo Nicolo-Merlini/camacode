@@ -8,7 +8,7 @@ const STEPS: { title: string | any, subtitle: string }[] = [
         subtitle: 'Visioniamo insieme la fattibilita’ del tuo progetto'
     },
     {
-        title: `Demo <span class="underline decoration-[4px] underline-offset-[5px] md:underline-offset-[9px] decoration-[#48FB47]">gratuita</span>`,
+        title: `Demo <span class="underline decoration-[4px] underline-offset-[5px] sm:underline-offset-[9px] decoration-[#48FB47]">gratuita</span>`,
         subtitle: 'Ti realizziamo una demo gratuita in meno di un mese'
     },
     {

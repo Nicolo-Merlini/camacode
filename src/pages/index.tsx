@@ -211,7 +211,6 @@ export default function Home() {
           >
             <StepCards />
           </Stack>
-
         </Paragraph>
       </BoxWidth>
 
