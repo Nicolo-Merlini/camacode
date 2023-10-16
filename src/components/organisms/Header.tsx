@@ -162,7 +162,7 @@ const Header = () => {
                                     fontWeight={'semibold'}
                                     userSelect={'none'}
                                 >
-                                    Proggetti
+                                    Progetti
                                 </Text>
                             </Box>
                             {/* <Box
