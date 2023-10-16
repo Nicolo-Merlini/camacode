@@ -133,6 +133,7 @@ export default function Home() {
                   src={webAppMobile}
                   className="hidden md:flex pr-[35px] lg:pr-[100px]w-[full] lg:w-[250px] xl:w-[300px] mt-[35px] lg:mt-[100px] float-left"
                 />
+
                 <Image
                   alt="Skimming"
                   src={webAppMobileDevice}
