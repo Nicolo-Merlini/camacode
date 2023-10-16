@@ -5,8 +5,8 @@ import BoxWidth from "../atoms/BoxWidth";
 
 const TechStack = () => {
   return (
-    <>
-      {/* <Image
+    <Box className="relative">
+      <Image
         width={3000}
         height={500}
         priority
@@ -14,15 +14,25 @@ const TechStack = () => {
         src="/line-green-desktop.png"
         sizes="100vw"
         // Make the image display full width
-        className="absolute top-[350px] z-0"
-      /> */}
+        className="hidden md:flex absolute top-[300px] -z-0"
+      />
+
+      <Image
+        width={3000}
+        height={100}
+        priority
+        alt="green-line"
+        src="/line-green-device.png"
+        sizes="100vw"
+        // Make the image display full width
+        className="flex md:hidden absolute top-[300px] -z-0"
+      />
 
       <Box
         bg="gray200"
         paddingTop={[10, 10, 20]}
         paddingBottom={10}
-        w="100vw"
-        className="ml-[-20px] lg:ml-[-50px] xl:ml-[-150px] 2xl:ml-[-200px] max-w-screen-2xl"
+        width={"full"}
       >
         <BoxWidth>
           <Text
@@ -109,7 +119,7 @@ const TechStack = () => {
           </Text>
         </BoxWidth>
       </Box>
-    </>
+    </Box>
   );
 };
 

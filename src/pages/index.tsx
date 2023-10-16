@@ -172,9 +172,11 @@ export default function Home() {
                 className="w-full  py-[50px] xl:px-[80px]"
               />
             </WhiteBox>
-            <TechStack></TechStack>
           </Stack>
         </Paragraph>
+      </BoxWidth>
+      <TechStack></TechStack>
+      <BoxWidth>
         <Paragraph
           title="Progetti"
           subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
