@@ -35,7 +35,7 @@ export default function Home() {
         src="/line-green-device.png"
         sizes="100vw"
         // Make the image display full width
-        className="hidden more-320:flex more-420:hidden absolute top-[160px] xl:top-36 2xl:top-36 -z-10"
+        className="hidden more-320:flex more-420:hidden absolute top-[165px] xl:top-36 2xl:top-36 -z-10"
       />
 
       <BoxWidth>
@@ -48,7 +48,7 @@ export default function Home() {
         >
           <Box
             textStyle={["h1Mobile", "heroMobile", "h1", "hero", "hero90"]}
-            lineHeight={["35px", "65px", "80px", "90px", "100px"]}
+            lineHeight={["42px", "65px", "80px", "90px", "100px"]}
             fontWeight={["semibold", "semibold", "semibold", "600"]}
             zIndex={10}
             className="2xl:mb-[65px] xl:mb-[30px]"
@@ -96,7 +96,7 @@ export default function Home() {
           subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
         >
           <Stack
-            spacing={["45px", "45px", "45px", "60px"]}
+            spacing={["20px", "20px", "20px", "60px"]}
             direction="column"
             my={'100px'}
           >
