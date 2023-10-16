@@ -38,28 +38,28 @@ const TechStack = () => {
               {/* row 1*/}
               <TechnologyBox
                 name="prova"
+                image="/TechStackImages/react.png"
+              ></TechnologyBox>
+              <TechnologyBox
+                name="prova"
+                image="/TechStackImages/nextjs.png"
+              ></TechnologyBox>
+              <TechnologyBox
+                name="prova"
+                image="/TechStackImages/android.png"
+              ></TechnologyBox>
+              <TechnologyBox
+                name="prova"
+                image="/TechStackImages/swift.png"
+              ></TechnologyBox>
+              <TechnologyBox
+                name="prova"
                 image="/TechStackImages/nodejs.png"
-              ></TechnologyBox>
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/graphql.png"
-              ></TechnologyBox>
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/go.png"
-              ></TechnologyBox>
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/github.png"
-              ></TechnologyBox>
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/sentry.png"
               ></TechnologyBox>
               {/* row 2*/}
               <TechnologyBox
                 name="prova"
-                image="/TechStackImages/aws.png"
+                image="/TechStackImages/go.png"
               ></TechnologyBox>
               <TechnologyBox
                 name="prova"
@@ -71,11 +71,11 @@ const TechStack = () => {
               ></TechnologyBox>
               <TechnologyBox
                 name="prova"
-                image="/TechStackImages/nextjs.png"
+                image="/TechStackImages/graphql.png"
               ></TechnologyBox>
               <TechnologyBox
                 name="prova"
-                image="/TechStackImages/react.png"
+                image="/TechStackImages/aws.png"
               ></TechnologyBox>
               {/* row 3*/}
               <TechnologyBox
@@ -96,7 +96,7 @@ const TechStack = () => {
               ></TechnologyBox>
               <TechnologyBox
                 name="prova"
-                image="/TechStackImages/docker.png"
+                image="/TechStackImages/sentry.png"
               ></TechnologyBox>
             </Box>
           </Box>
