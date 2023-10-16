@@ -13,6 +13,7 @@ import eCommerceMobile from '../../public/e-commerce-mobile.png'
 import BoxText from "@/components/atoms/BoxText";
 import BoxGrid from "@/components/atoms/BoxGrid";
 import Progetti from "@/components/molecules/Progetti";
+import StepCards from "@/components/organisms/StepCards";
 
 export default function Home() {
   return (
@@ -183,8 +184,6 @@ export default function Home() {
 
 
         </Paragraph>
-      </BoxWidth>
-      <BoxWidth>
         <Paragraph
           title="Progetti"
           subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
@@ -197,12 +196,25 @@ export default function Home() {
           >
 
             <Progetti />
-
           </Stack>
 
+        </Paragraph>
+        <Paragraph
+          title="Paghi solo se soddisfatto"
+          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
+          className="mt-[100px] md:mt-[150px] lg:mt-[250px]"
+        >
+          <Stack
+            spacing={["20px", "20px", "20px", "60px"]}
+            direction="column"
+            my={['50px', '50px', '50px', '100px']}
+          >
+            <StepCards />
+          </Stack>
 
         </Paragraph>
       </BoxWidth>
+
     </>
   );
 }
