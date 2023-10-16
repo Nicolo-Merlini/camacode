@@ -4,7 +4,7 @@ import React, { FC } from 'react'
 const BoxGrid: FC<{ children: React.ReactNode }> = ({ children }) => {
     return (
         <Box
-            display={['grid', 'grid', 'grid', 'flex']}
+            className='grid md:flex'
             justifyContent={'space-between'}
             gap={'20px'}
             w={'full'}

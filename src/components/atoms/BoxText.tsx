@@ -10,7 +10,7 @@ const BoxText: FC<{ title: string, subtitle: string, className?: string }> = ({ 
         >
             <Box>
                 <Text
-                    textStyle={['h2', 'h2', 'h1', 'h1', 'h1']}
+                    textStyle={['h2', 'h2', 'h1Mobile', 'h1', 'h1']}
                     fontWeight={'semibold'}
                     color={'dark'}
                 >

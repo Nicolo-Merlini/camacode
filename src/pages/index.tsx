@@ -4,6 +4,12 @@ import WhiteBox from "@/components/atoms/WhiteBox";
 import { Box, Button, Stack, Text, VStack } from "@chakra-ui/react";
 import Image from 'next/image'
 import skimming from '../../public/skimming.png'
+import webAppMobile from '../../public/web-app-mobile.png'
+import webAppMobileDevice from '../../public/web-app-mobile-device.png'
+import eCommerce from '../../public/e-commerce.png'
+import eCommerceMobile from '../../public/e-commerce-mobile.png'
+
+
 import BoxText from "@/components/atoms/BoxText";
 import BoxGrid from "@/components/atoms/BoxGrid";
 
@@ -119,19 +125,59 @@ export default function Home() {
               <BoxText
                 title="Mobile App"
                 subtitle="Sviluppiamo app sia per Android che per IOS. Abbiamo esperienza nella costruzione di: e-commerce, app aziendali e gestionali."
-                className="hidden lg:flex lg:w-3/4"
+                className="py-[50px] lg:w-8/12"
               />
               <WhiteBox
-                className="lg:w-1/4"
+                className=" lg:w-4/12"
               >
                 <Image
                   alt="Skimming"
-                  src={skimming}
-                  className="pl-[35px] lg:pl-[100px]w-[full] lg:w-[400px] xl:w-[500px] my-[35px] lg:my-[100px] float-right"
+                  src={webAppMobile}
+                  className="hidden md:flex pr-[35px] lg:pr-[100px]w-[full] lg:w-[250px] xl:w-[300px] mt-[35px] lg:mt-[100px] float-left"
+                />
+                <Image
+                  alt="Skimming"
+                  src={webAppMobileDevice}
+                  className="flex md:hidden rounded-b-[40px] pr-[35px] lg:pr-[100px]w-[full] lg:w-[250px] xl:w-[300px] mt-[35px] lg:mt-[100px] float-left"
                 />
               </WhiteBox>
 
             </BoxGrid>
+            <BoxGrid>
+              <BoxText
+                title="E-commerce"
+                subtitle="Specializzati nella creazione di marketplace ed e-commerce, garantiamo libertà di espressione per il tuo brand, un'esperienza utente superiore e flessibilità nella gestione dei canali di vendita."
+                className="md:w-11/12  lg:hidden py-[50px]"
+              />
+              <WhiteBox
+                className=" lg:w-5/12"
+              >
+                <Image
+                  alt="Skimming"
+                  src={eCommerce}
+                  className="hidden lg:flex pl-[45px] xl:pl-[100px] lg:w-[600px] xl:w-[850px] my-[35px] lg:my-[100px] float-right"
+                />
+                <Image
+                  alt="Skimming"
+                  src={eCommerceMobile}
+                  className="lg:hidden pl-[35px] my-[35px] md:my-[50px] md:w-[600px]  float-right"
+                />
+              </WhiteBox>
+              <BoxText
+                title="E-commerce"
+                subtitle="Specializzati nella creazione di marketplace ed e-commerce, garantiamo libertà di espressione per il tuo brand, un'esperienza utente superiore e flessibilità nella gestione dei canali di vendita."
+                className="hidden lg:flex   lg:w-7/12"
+              />
+            </BoxGrid>
+
+            <WhiteBox>
+              <BoxText
+                title="Sviluppo JamStack"
+                subtitle="Jamstack è un'architettura che separa l'esperienza web dai dati e dalla logica aziendale, migliorando flessibilità, scalabilità, prestazioni e manutenibilità. Elimina la dipendenza della logica aziendale dall'esperienza web, consentendo un'architettura componibile in cui la personalizzazione e i servizi di terze parti sono integrati tramite API."
+                className="w-full  py-[50px] xl:px-[80px]"
+              />
+            </WhiteBox>
+
           </Stack>
 
 
