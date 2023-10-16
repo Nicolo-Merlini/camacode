@@ -8,8 +8,8 @@ const Paragraph: FC<{ children: any, title: string, subtitle: string, className?
             className={className ? className : ""}
         >
             <Text
-                textStyle={['h1Mobile', 'h1Title', 'h1Title', 'hero', 'hero']}
-                fontWeight={'semibold'}
+                textStyle={['h1TitleMobile', 'h1Title', 'h1Title', 'hero', 'hero']}
+                fontWeight={'600'}
                 color={'dark'}
             >
                 {title}

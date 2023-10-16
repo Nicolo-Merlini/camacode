@@ -15,7 +15,7 @@ const SmallCard: FC<{ title: any, index: number, subtitle: string, className?: s
                 justifyContent={'center'}
                 bg={'gray300'}
                 borderRadius={'full'}
-                className='absolute top-[15px] left-[15px]'
+                className='absolute top-[20px] left-[20px]'
                 textStyle={['h4', 'h4', 'h3', 'h3', 'h3']}
                 fontWeight={'semibold'}
             >
