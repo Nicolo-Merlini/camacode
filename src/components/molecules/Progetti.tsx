@@ -72,12 +72,12 @@ const Progetti = () => {
                     <Image
                         alt="Veplo"
                         src={veploLogo}
-                        className="h-[50px] w-fit mt-[60px] mb-[40px] mx-auto"
+                        className="h-[50px] w-fit mt-[40px] md:mt-[60px] mb-[30px] md:mb-[40px] mx-auto"
                     />
                     <Image
                         alt="Veplo"
                         src={veploProgetti}
-                        className="mx-auto w-[280px] mb-[30px] h-fit rounded-b-[40px]"
+                        className="mx-auto h-[300px] sm:h-[400px] mb-[30px] w-fit rounded-b-[40px]"
                     />
 
                 </WhiteBox>
