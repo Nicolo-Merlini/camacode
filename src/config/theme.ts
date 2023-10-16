@@ -138,6 +138,17 @@ export const theme_chakraUI = {
             transform: "scale(0.98)", //!chiedere a fedele quanto farlo scalare
           },
         },
+        grayPrimary: {
+          bg: "gray200", // Usa il colore primario come sfondo
+          color: "black", // Testo bianco
+          _hover: {
+            bg: "gray200", // Cambia il colore in primario al passaggio del mouse
+          },
+          _active: {
+            bg: "gray200",
+            transform: 'scale(0.98)',
+          }
+        },
       },
     },
   },
