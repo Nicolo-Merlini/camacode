@@ -72,7 +72,8 @@ const Progetti = () => {
                     <Image
                         alt="Veplo"
                         src={veploLogo}
-                        className="h-[50px] w-fit mt-[45px] md:mt-[60px] mb-[25px] md:mb-[40px] mx-auto"
+
+                        className="h-[50px] w-fit mt-[40px] md:mt-[60px] mb-[30px] md:mb-[40px] mx-auto"
                     />
                     <Image
                         alt="Veplo"
