@@ -2,18 +2,18 @@ import BoxWidth from "@/components/atoms/BoxWidth";
 import Paragraph from "@/components/atoms/Paragraph";
 import WhiteBox from "@/components/atoms/WhiteBox";
 import { Box, Button, Stack, Text, VStack } from "@chakra-ui/react";
-import Image from 'next/image'
-import skimming from '../../public/skimming.png'
-import webAppMobile from '../../public/web-app-mobile.png'
-import webAppMobileDevice from '../../public/web-app-mobile-device.png'
-import eCommerce from '../../public/e-commerce.png'
-import eCommerceMobile from '../../public/e-commerce-mobile.png'
-
+import Image from "next/image";
+import skimming from "../../public/skimming.png";
+import webAppMobile from "../../public/web-app-mobile.png";
+import webAppMobileDevice from "../../public/web-app-mobile-device.png";
+import eCommerce from "../../public/e-commerce.png";
+import eCommerceMobile from "../../public/e-commerce-mobile.png";
 
 import BoxText from "@/components/atoms/BoxText";
 import BoxGrid from "@/components/atoms/BoxGrid";
 import Progetti from "@/components/molecules/Progetti";
 import StepCards from "@/components/organisms/StepCards";
+import TechStack from "@/components/organisms/TechStack";
 
 export default function Home() {
   return (
@@ -100,7 +100,7 @@ export default function Home() {
           <Stack
             spacing={["20px", "20px", "20px", "60px"]}
             direction="column"
-            my={['50px', '50px', '50px', '100px']}
+            my={["50px", "50px", "50px", "100px"]}
           >
             <BoxGrid>
               <BoxText
@@ -108,9 +108,7 @@ export default function Home() {
                 subtitle="Realizziamo Web App esteticamente sorprendenti e altamente funzionali, garantendo elevate performance, sicurezza e scalabilità."
                 className="lg:hidden py-[50px]"
               />
-              <WhiteBox
-                className="lg:w-1/2"
-              >
+              <WhiteBox className="lg:w-1/2">
                 <Image
                   alt="Skimming"
                   src={skimming}
@@ -129,9 +127,7 @@ export default function Home() {
                 subtitle="Sviluppiamo app sia per Android che per IOS. Abbiamo esperienza nella costruzione di: e-commerce, app aziendali e gestionali."
                 className="py-[50px] lg:w-8/12"
               />
-              <WhiteBox
-                className=" lg:w-4/12"
-              >
+              <WhiteBox className=" lg:w-4/12">
                 <Image
                   alt="Skimming"
                   src={webAppMobile}
@@ -143,7 +139,6 @@ export default function Home() {
                   className="flex md:hidden rounded-b-[40px] pr-[35px] lg:pr-[100px]w-[full] lg:w-[250px] xl:w-[300px] mt-[35px] lg:mt-[100px] float-left"
                 />
               </WhiteBox>
-
             </BoxGrid>
             <BoxGrid>
               <BoxText
@@ -151,9 +146,7 @@ export default function Home() {
                 subtitle="Specializzati nella creazione di marketplace ed e-commerce, garantiamo libertà di espressione per il tuo brand, un'esperienza utente superiore e flessibilità nella gestione dei canali di vendita."
                 className="md:w-11/12  lg:hidden py-[50px]"
               />
-              <WhiteBox
-                className=" lg:w-5/12"
-              >
+              <WhiteBox className=" lg:w-5/12">
                 <Image
                   alt="Skimming"
                   src={eCommerce}
@@ -179,10 +172,8 @@ export default function Home() {
                 className="w-full  py-[50px] xl:px-[80px]"
               />
             </WhiteBox>
-
+            <TechStack></TechStack>
           </Stack>
-
-
         </Paragraph>
         <Paragraph
           title="Progetti"
@@ -192,12 +183,10 @@ export default function Home() {
           <Stack
             spacing={["20px", "20px", "20px", "60px"]}
             direction="column"
-            my={['50px', '50px', '50px', '100px']}
+            my={["50px", "50px", "50px", "100px"]}
           >
-
             <Progetti />
           </Stack>
-
         </Paragraph>
         <Paragraph
           title="Paghi solo se soddisfatto"
@@ -207,13 +196,12 @@ export default function Home() {
           <Stack
             spacing={["20px", "20px", "20px", "60px"]}
             direction="column"
-            my={['50px', '50px', '50px', '100px']}
+            my={["50px", "50px", "50px", "100px"]}
           >
             <StepCards />
           </Stack>
         </Paragraph>
       </BoxWidth>
-
     </>
   );
 }
