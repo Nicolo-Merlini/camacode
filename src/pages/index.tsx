@@ -42,7 +42,7 @@ export default function Home() {
         <Stack
           spacing={["45px", "45px", "45px", "40px"]}
           direction="column"
-          minH={"95vh"}
+          minH={"92vh"}
           className="mt-[60px] md:mt-24 lg:mt-16 2xl:mt-24"
           color={"dark"}
         >
