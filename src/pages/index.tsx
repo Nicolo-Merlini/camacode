@@ -1,16 +1,7 @@
 import BoxWidth from "@/components/atoms/BoxWidth";
 import Paragraph from "@/components/atoms/Paragraph";
 import WhiteBox from "@/components/atoms/WhiteBox";
-import {
-  Box,
-  Button,
-  FormControl,
-  FormHelperText,
-  FormLabel,
-  Input,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, FormControl, Input, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import skimming from "../../public/skimming.png";
 import webAppMobile from "../../public/web-app-mobile.png";
@@ -214,7 +205,7 @@ const Home = () => {
           className="mt-[100px] md:mt-[150px] lg:mt-[250px]"
         >
           <FormControl>
-            <Box className="md:w-2/3 mx-auto">
+            <Box className="md:w-1/2 mx-auto mt-10">
               <Box className="grid md:grid-cols-2 gap-[20px]">
                 <Input
                   type="text"
@@ -268,7 +259,13 @@ const Home = () => {
                 size="lg"
               />
             </Box>
-            <Button variant="black">Contattaci!</Button>
+            <Button
+              borderRadius="15px"
+              className="my-10 md:w-1/2"
+              variant="black"
+            >
+              Contattaci!
+            </Button>
           </FormControl>
         </Paragraph>
       </BoxWidth>
