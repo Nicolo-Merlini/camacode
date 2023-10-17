@@ -61,7 +61,7 @@ const ConfirmEmailModal: FC<{ isOpen: boolean, handleCloseButton: () => void }> 
                                             lineHeight={'short'}
 
                                         >
-                                            La tua richiesta e’ stata inviata con successo. In questi giorni verrai contattato tramite cellulare o email.
+                                            La tua richiesta e’ stata inviata con successo. In questi giorni verrai contattato da un membro del nostro team.
                                         </Text>
 
                                         <Button
