@@ -38,12 +38,17 @@ export const theme_chakraUI = {
     },
     h1Title: {
       fontSize: "60px",
+      lineHeight: "70px",
+
     },
     h1TitleMobile: {
       fontSize: "50px",
+      lineHeight: "60px",
     },
     h1Mobile: {
       fontSize: "2.1rem",
+      lineHeight: "2.5rem",
+
     },
     h2: {
       fontSize: "30px",
@@ -52,8 +57,8 @@ export const theme_chakraUI = {
       fontSize: "25px",
     },
     h3Subtitle: {
-      fontSize: "25px",
-      lineHeight: "40px",
+      fontSize: "22px",
+      lineHeight: "35px",
     },
     h4: {
       fontSize: "20px",
@@ -87,7 +92,8 @@ export const theme_chakraUI = {
           px: "30px",
         },
         lg: {
-          h: ["50px", "70px"],
+          h: ["60px", "70px"],
+          fontSize: "20px",
           px: "45px",
         },
       },
@@ -116,6 +122,37 @@ export const theme_chakraUI = {
           color: "dark",
           borderWidth: "2px",
           borderColor: "dark",
+          borderRadius: "50px",
+          _hover: {
+            bg: "green",
+            borderColor: "green",
+            opacity: 1,
+            color: "dark",
+          },
+          _active: {
+            bg: "pressed",
+            transform: "scale(0.98)", //!chiedere a fedele quanto farlo scalare
+          },
+          _disabled: {
+            bg: "inactive",
+            opacity: 1,
+            transform: "scale(0.98)", //!chiedere a fedele quanto farlo scalare
+          },
+        },
+        grayPrimary: {
+          bg: "gray200", // Usa il colore primario come sfondo
+          color: "black", // Testo bianco
+          _hover: {
+            bg: "gray200", // Cambia il colore in primario al passaggio del mouse
+          },
+          _active: {
+            bg: "gray200",
+            transform: 'scale(0.98)',
+          }
+        },
+        green: {
+          bg: "green",
+          color: "dark",
           borderRadius: "50px",
           _hover: {
             bg: "green",

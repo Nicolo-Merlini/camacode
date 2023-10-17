@@ -5,22 +5,22 @@ import SmallCard from '../molecules/SmallCard'
 const STEPS: { title: string | any, subtitle: string }[] = [
     {
         title: 'Progetto',
-        subtitle: 'Visioniamo insieme la fattibilita’ del tuo progetto'
+        subtitle: 'Visioniamo insieme la tua idea e finalizziamo una prima proposta'
     },
     {
-        title: `Demo <span class="underline decoration-[4px] underline-offset-[5px] md:underline-offset-[9px] decoration-[#48FB47]">gratuita</span>`,
-        subtitle: 'Ti realizziamo una demo gratuita in meno di un mese'
+        title: `Demo <span class="underline decoration-[4px] underline-offset-[5px] sm:underline-offset-[9px] decoration-[#48FB47]">gratuita</span>`,
+        subtitle: 'realizziamo una demo gratuita in pochi giorni per mostrarti la fattibilità della tua idea'
     },
     {
         title: 'Contratto',
-        subtitle: 'Conclusione del contratto e inizio dello sviluppo del progetto'
+        subtitle: 'Conclusione del contratto e continuazione dello sviluppo del progetto'
     },
 ]
 
 const StepCards = () => {
     return (
         <Box
-            className='flex overflow-x-auto lg:overflow-x-hidden  lg:grid lg:grid-cols-3 '
+            className='flex overflow-x-auto  lg:overflow-x-hidden  lg:grid lg:grid-cols-3'
             gap={'20px'}
         >
             {STEPS.map((step, index) => {
