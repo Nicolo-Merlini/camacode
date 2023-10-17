@@ -15,11 +15,14 @@ import Progetti from "@/components/molecules/Progetti";
 import StepCards from "@/components/organisms/StepCards";
 import TechStack from "@/components/organisms/TechStack";
 import Link from "next/link";
+import ScrollToTop from "@/components/atoms/ScrollToTop";
 import ContactsForm from "@/components/molecules/ContactsForm";
 
 export const Home = () => {
   return (
     <>
+      <ScrollToTop />
+
       <Box bg={"whiteIce"}>
         <Image
           width={3000}
@@ -172,7 +175,7 @@ export const Home = () => {
                 />
               </BoxGrid>
 
-              <WhiteBox>
+              <WhiteBox className="z-10">
                 <BoxText
                   title="Sviluppo JamStack"
                   subtitle="Jamstack è un'architettura che separa l'esperienza web dai dati e dalla logica aziendale, migliorando flessibilità, scalabilità, prestazioni e manutenibilità. Elimina la dipendenza della logica aziendale dall'esperienza web, consentendo un'architettura componibile in cui la personalizzazione e i servizi di terze parti sono integrati tramite API."

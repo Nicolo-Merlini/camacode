@@ -11,7 +11,6 @@ const WhiteBox: FC<{ children: any; className?: string }> = ({
       borderColor={"gray300"}
       bg={"white"}
       borderRadius={"40px"}
-      zIndex={20}
       className={`${className ? className : ""}`}
     >
       {children}
