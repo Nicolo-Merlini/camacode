@@ -17,7 +17,9 @@ import StepCards from "@/components/organisms/StepCards";
 
 export default function Home() {
   return (
-    <>
+    <Box
+      bg={'whiteIce'}
+    >
       <Image
         width={3000}
         height={500}
@@ -45,7 +47,7 @@ export default function Home() {
           spacing={["45px", "45px", "45px", "40px"]}
           direction="column"
           minH={"92vh"}
-          className="mt-[60px] md:mt-24 lg:mt-16 2xl:mt-24"
+          className="pt-[60px] md:pt-24 lg:pt-16 2xl:pt-24"
           color={"dark"}
         >
           <Box
@@ -208,13 +210,13 @@ export default function Home() {
           <Stack
             spacing={["20px", "20px", "20px", "60px"]}
             direction="column"
-            my={['50px', '50px', '50px', '100px']}
+            py={['50px', '50px', '50px', '100px']}
           >
             <StepCards />
           </Stack>
         </Paragraph>
       </BoxWidth>
 
-    </>
+    </Box>
   );
 }

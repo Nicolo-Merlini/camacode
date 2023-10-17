@@ -15,9 +15,11 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 const Footer = () => {
     return (
         <Box
-            bg={'dark'}
-            color={'#FFF3F3'}
+            bg={'whiteIce'}
+            color={'gray700'}
             p={[4, 10, 10]}
+            borderTopWidth={'1px'}
+            borderColor={'gray300'}
         >
             <Box
                 display={['grid', 'grid', 'grid', 'flex']}

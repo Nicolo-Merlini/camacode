@@ -102,9 +102,9 @@ const Header = () => {
                     </DrawerBody>
                 </DrawerContent>
             </Drawer >
-            <header className="bg-white lg:mt-10">
+            <header className="bg-[#FFF7F7] lg:pt-10">
                 <BoxWidth
-                    className='hidden lg:grid'
+                    className='hidden lg:grid '
                 >
                     <nav
                         className="flex  mx-0 justify-between" >
@@ -196,7 +196,7 @@ const Header = () => {
                     </nav>
                 </BoxWidth>
                 <Box
-                    className='flex lg:hidden justify-between m-[20px]'
+                    className='flex lg:hidden justify-between p-[20px]'
                 >
                     <Box>
 
