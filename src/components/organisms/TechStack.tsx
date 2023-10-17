@@ -5,7 +5,8 @@ import BoxWidth from "../atoms/BoxWidth";
 
 const TechStack = () => {
   return (
-    <Box className="relative">
+    <Box className="relative"
+    >
       <Image
         width={3000}
         height={500}
@@ -32,10 +33,14 @@ const TechStack = () => {
         bg="gray200"
         paddingTop={"180px"}
         paddingBottom={10}
-        marginTop={-200}
+        marginTop={-250}
         zIndex={0}
         width={"full"}
       >
+        <Box
+          id={'tech-stack'}
+          mb={'50px'}
+        ></Box>
         <BoxWidth>
           <Text
             className="text-center mb-10 md:mb-20 z-10"

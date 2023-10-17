@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import BoxWidth from '../atoms/BoxWidth'
 import { Bars3Icon } from '@heroicons/react/20/solid'
 import { Cancel } from 'iconoir-react'
+import Link from 'next/link'
 
 const Header = () => {
     const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false)
@@ -61,110 +62,147 @@ const Header = () => {
                             display={'grid'}
                             gap={'20px'}
                         >
-                            <Box
-                                width={'fit-content'}
-                                textStyle={['h3', 'h3', 'h3']}
-                                fontWeight={'bold'}
-                                userSelect={'none'}
-                                color={'dark'}
+                            <Link
+                                href='/'
                             >
-                                Home
-                            </Box>
-                            <Box
-                                width={'fit-content'}
-                                textStyle={['h3', 'h3', 'h3']}
-                                fontWeight={'bold'}
-                                userSelect={'none'}
-                                color={'dark'}
+                                <Box
+                                    width={'fit-content'}
+                                    textStyle={['h3', 'h3', 'h3']}
+                                    fontWeight={'bold'}
+                                    userSelect={'none'}
+                                    color={'dark'}
+                                    onClick={closeDrawer}
+                                >
+                                    Home
+                                </Box>
+                            </Link>
+                            <Link
+                                href='/#servizi'
                             >
-                                Servizi
-                            </Box>
-                            <Box
-                                width={'fit-content'}
-                                textStyle={['h3', 'h3', 'h3']}
-                                fontWeight={'bold'}
-                                userSelect={'none'}
-                                color={'dark'}
+                                <Box
+                                    width={'fit-content'}
+                                    textStyle={['h3', 'h3', 'h3']}
+                                    fontWeight={'bold'}
+                                    userSelect={'none'}
+                                    color={'dark'}
+                                    onClick={closeDrawer}
+                                >
+                                    Servizi
+                                </Box>
+                            </Link>
+                            <Link
+                                href='/#tech-stack'
                             >
-                                Tech Stack
-                            </Box>
-                            <Box
-                                width={'fit-content'}
-                                textStyle={['h3', 'h3', 'h3']}
-                                fontWeight={'bold'}
-                                userSelect={'none'}
-                                color={'dark'}
+                                <Box
+                                    width={'fit-content'}
+                                    textStyle={['h3', 'h3', 'h3']}
+                                    fontWeight={'bold'}
+                                    userSelect={'none'}
+                                    color={'dark'}
+                                    onClick={closeDrawer}
+                                >
+                                    Tech Stack
+                                </Box>
+                            </Link>
+                            <Link
+                                href='/#progetti'
                             >
-                                Progetti
-                            </Box>
+                                <Box
+                                    width={'fit-content'}
+                                    textStyle={['h3', 'h3', 'h3']}
+                                    fontWeight={'bold'}
+                                    userSelect={'none'}
+                                    color={'dark'}
+                                    onClick={closeDrawer}
+                                >
+                                    Progetti
+                                </Box>
+                            </Link>
+
                         </Box>
 
                     </DrawerBody>
                 </DrawerContent>
             </Drawer >
-            <header className="bg-[#FFF7F7] lg:pt-10">
+            <header className="bg-[#FFF7F7] lg:pt-10 "> {/* sticky lg:static top-0 z-50 */}
                 <BoxWidth
                     className='hidden lg:grid '
                 >
                     <nav
                         className="flex  mx-0 justify-between" >
                         <HStack spacing='50px'>
-                            <Box
-                                cursor={'pointer'}
-                                _active={{
-                                    transform: 'scale(0.98)',
-                                }}
+                            <Link
+                                href='/'
                             >
-                                <Text
-                                    textStyle={'h4'}
-                                    fontWeight={'semibold'}
-                                    userSelect={'none'}
+                                <Box
+                                    cursor={'pointer'}
+                                    _active={{
+                                        transform: 'scale(0.98)',
+                                    }}
                                 >
-                                    Home
-                                </Text>
-                            </Box>
-                            <Box
-                                cursor={'pointer'}
-                                _active={{
-                                    transform: 'scale(0.98)',
-                                }}
+                                    <Text
+                                        textStyle={'h4'}
+                                        fontWeight={'semibold'}
+                                        userSelect={'none'}
+                                    >
+                                        Home
+                                    </Text>
+                                </Box>
+                            </Link>
+                            <Link
+                                href='#servizi'
                             >
-                                <Text
-                                    textStyle={'h4'}
-                                    fontWeight={'semibold'}
-                                    userSelect={'none'}
+                                <Box
+                                    cursor={'pointer'}
+                                    _active={{
+                                        transform: 'scale(0.98)',
+                                    }}
                                 >
-                                    Servizi
-                                </Text>
-                            </Box>
-                            <Box
-                                cursor={'pointer'}
-                                _active={{
-                                    transform: 'scale(0.98)',
-                                }}
+                                    <Text
+                                        textStyle={'h4'}
+                                        fontWeight={'semibold'}
+                                        userSelect={'none'}
+                                    >
+                                        Servizi
+                                    </Text>
+                                </Box>
+                            </Link>
+                            <Link
+                                href='#tech-stack'
                             >
-                                <Text
-                                    textStyle={'h4'}
-                                    fontWeight={'semibold'}
-                                    userSelect={'none'}
+                                <Box
+                                    cursor={'pointer'}
+                                    _active={{
+                                        transform: 'scale(0.98)',
+                                    }}
                                 >
-                                    Tech Stack
-                                </Text>
-                            </Box>
-                            <Box
-                                cursor={'pointer'}
-                                _active={{
-                                    transform: 'scale(0.98)',
-                                }}
+                                    <Text
+                                        textStyle={'h4'}
+                                        fontWeight={'semibold'}
+                                        userSelect={'none'}
+                                    >
+                                        Tech Stack
+                                    </Text>
+                                </Box>
+                            </Link>
+                            <Link
+                                href='#progetti'
                             >
-                                <Text
-                                    textStyle={'h4'}
-                                    fontWeight={'semibold'}
-                                    userSelect={'none'}
+                                <Box
+                                    cursor={'pointer'}
+                                    _active={{
+                                        transform: 'scale(0.98)',
+                                    }}
                                 >
-                                    Progetti
-                                </Text>
-                            </Box>
+                                    <Text
+                                        textStyle={'h4'}
+                                        fontWeight={'semibold'}
+                                        userSelect={'none'}
+                                    >
+                                        Progetti
+                                    </Text>
+                                </Box>
+                            </Link>
                             {/* <Box
                                 cursor={'pointer'}
                                 _active={{
