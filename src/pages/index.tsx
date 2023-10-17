@@ -209,12 +209,44 @@ export const Home = () => {
             <Stack
               spacing={["20px", "20px", "20px", "60px"]}
               direction="column"
-              py={["50px", "50px", "50px", "100px"]}
+              pt={["50px", "50px", "50px", "100px"]}
+              pb={["20px", "20px", "20px", "30px"]}
             >
               <StepCards />
             </Stack>
+            <Box
+              borderWidth={"1px"}
+              borderColor={"gray00"}
+              bg={["gray300", "gray300", "white", "white"]}
+              borderRadius={"40px"}
+              py={['40px', '40px', '40px', '60px']}
+              mb={'160px'}
+            >
+              <Text
+                textStyle={['h3', 'h3', 'h1Mobile', 'h1TitleMobile', 'h1TitleMobile']}
+                fontWeight={'semibold'}
+                color={'dark'}
+                mx={'20px'}
+                mb={['30px', '30px', '30px', '30px']}
+              >
+                Vuoi presentarci il tuo progetto?
+              </Text>
+              <Link href={"/#free-trial"} className="w-fit">
+                <Button
+                  variant={["black", "black", "black", "green"]}
+                  borderRadius={"100px"}
+                  width={"fit-content"}
+                  size={["lg", "lg"]}
+                >
+                  <Text textStyle={["h4", "h4", "h4"]} fontWeight={"medium"}>
+                    Schedula meeting
+                  </Text>
+                </Button>
+              </Link>
+            </Box>
           </Paragraph>
-          <Box id={"contatti"} mb={"50px"}></Box>
+
+          <Box id={"contatti"} mb={"200px"}></Box>
           <Paragraph
             title="Cosa stai aspettando"
             subtitle="Compila il form e verrai contattato direttamente da un membro del nostro team."
