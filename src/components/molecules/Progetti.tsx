@@ -17,7 +17,7 @@ const Progetti = () => {
             <BoxGrid>
                 <BoxText
                     title="Skimming BPE"
-                    subtitle="Pnat hired us to develop an IoT Dashboard that gathers data from chips installed into trees, stores the data in the cloud, and performs predictive analysis on it in order to program trees' maintenance."
+                    subtitle="Piattaforma multifunzionale dedicata al settore edilizio in grado di gestire gare di appalto private, garantendo una collabborazione totale tra committenti, imprese e progettisti."
                     className="py-[40px] md:py-[50px] w-full md:w-1/2"
                 />
                 <WhiteBox
@@ -40,7 +40,7 @@ const Progetti = () => {
             <BoxGrid>
                 <BoxText
                     title="Indice"
-                    subtitle="Pnat hired us to develop an IoT Dashboard that gathers data from chips installed into trees, stores the data in the cloud, and performs predictive analysis on it in order to program trees' maintenance."
+                    subtitle="Headless e-commerce creato per vendere un’esclusiva selezione dei migliori occhiali al mondo."
                     className="py-[40px] md:py-[50px] w-full md:w-1/2"
                 />
                 <WhiteBox
@@ -63,7 +63,7 @@ const Progetti = () => {
             <BoxGrid>
                 <BoxText
                     title="Veplo"
-                    subtitle="Pnat hired us to develop an IoT Dashboard that gathers data from chips installed into trees, stores the data in the cloud, and performs predictive analysis on it in order to program trees' maintenance."
+                    subtitle="Marketplace di abbigliamento dedicato ai migliori brand emergenti italiani, in grado di permettere una vendita diretta di capi e accessori tra brand e clienti"
                     className="py-[40px] md:py-[50px] w-full md:w-1/2"
                 />
                 <WhiteBox

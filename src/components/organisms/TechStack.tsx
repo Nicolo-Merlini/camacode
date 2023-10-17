@@ -158,7 +158,6 @@ const TechnologyBox = ({ name, image }: Props) => {
     };
   }, []);
 
-  console.log(image);
 
   const padding = (boxWidth * 40) / 100;
 
