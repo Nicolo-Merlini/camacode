@@ -1,7 +1,7 @@
 import BoxWidth from "@/components/atoms/BoxWidth";
 import Paragraph from "@/components/atoms/Paragraph";
 import WhiteBox from "@/components/atoms/WhiteBox";
-import { Box, Button, IconButton, Stack, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import skimming from "../../public/skimming.png";
 import webAppMobile from "../../public/web-app-mobile.png";
@@ -15,39 +15,15 @@ import Progetti from "@/components/molecules/Progetti";
 import StepCards from "@/components/organisms/StepCards";
 import TechStack from "@/components/organisms/TechStack";
 import Link from "next/link";
-import ConfirmEmailModal from "@/components/molecules/ConfirmEmailModal";
-import { useState } from "react";
-import { ArrowUpIcon } from "@heroicons/react/20/solid";
-import { ArrowUp } from "iconoir-react";
 import ScrollToTop from "@/components/atoms/ScrollToTop";
+import ContactsForm from "@/components/molecules/ContactsForm";
 
-export default function Home() {
-  const [isOpen, setIsOpen] = useState(false)
-
-
-  const sendEmail = async () => {
-    const firstName = 'Nicolo';
-    const lastName = 'Rossi';
-    const endpoint = `/api/send-email?firstName=${firstName}&lastName=${lastName}`
-    try {
-      const response = await fetch(endpoint)
-      const result = await response.json();
-      setIsOpen(true)
-    } catch {
-      console.log('errore');
-    }
-
-
-  }
-
+export const Home = () => {
   return (
     <>
-
       <ScrollToTop />
 
-      <Box
-        bg={'whiteIce'}
-      >
+      <Box bg={"whiteIce"}>
         <Image
           width={3000}
           height={500}
@@ -70,9 +46,7 @@ export default function Home() {
           className="hidden more-320:flex more-420:hidden absolute top-[220px] z-0"
         />
 
-        <BoxWidth
-          className="z-20"
-        >
+        <BoxWidth className="z-20">
           <Stack
             spacing={["45px", "45px", "45px", "40px"]}
             direction="column"
@@ -109,34 +83,24 @@ export default function Home() {
             >
               Partiamo dalle tue esigenze per sviluppare software unici e
               personalizzati. Ti supportiamo con un team di programmatori,
-              solution architects e designer UX/UI, pronti a concretizzare il tuo
-              progetto.
+              solution architects e designer UX/UI, pronti a concretizzare il
+              tuo progetto.
             </Text>
-            <Link
-              href={'/#free-trial'}
-              className="w-fit"
-            >
+            <Link href={"/#free-trial"} className="w-fit">
               <Button
                 variant={["black", "black", "black", "white"]}
                 borderRadius={"100px"}
                 width={"fit-content"}
                 size={["md", "lg"]}
-              //onClick={sendEmail}
               >
-
                 <Text textStyle={["h5", "h5", "h4"]} fontWeight={"medium"}>
                   Paghi solo se soddisfatto
                 </Text>
               </Button>
             </Link>
-
           </Stack>
         </BoxWidth>
-        <Box
-          id={'servizi'}
-          mb={'100px'}
-        >
-        </Box>
+        <Box id={"servizi"} mb={"100px"}></Box>
         <BoxWidth>
           <Paragraph
             title="Servizi"
@@ -211,9 +175,7 @@ export default function Home() {
                 />
               </BoxGrid>
 
-              <WhiteBox
-                className="z-10"
-              >
+              <WhiteBox className="z-10">
                 <BoxText
                   title="Sviluppo JamStack"
                   subtitle="Jamstack è un'architettura che separa l'esperienza web dai dati e dalla logica aziendale, migliorando flessibilità, scalabilità, prestazioni e manutenibilità. Elimina la dipendenza della logica aziendale dall'esperienza web, consentendo un'architettura componibile in cui la personalizzazione e i servizi di terze parti sono integrati tramite API."
@@ -224,19 +186,12 @@ export default function Home() {
           </Paragraph>
         </BoxWidth>
         <TechStack></TechStack>
-        <Box
-          id={'progetti'}
-          mb={'100px'}
-        >
-        </Box>
-        <BoxWidth
-        >
-
+        <Box id={"progetti"} mb={"100px"}></Box>
+        <BoxWidth>
           <Paragraph
             title="Progetti"
             subtitle="Grazie alla nostra esperienza nelle migliori aziende e startup italiane, siamo in grado di realizzare le iniziative digitali più ambiziose. Offriamo soluzioni su misura, garantendo sempre elevate performance e scalabilità nel tempo."
           >
-
             <Stack
               spacing={["20px", "20px", "20px", "60px"]}
               direction="column"
@@ -245,10 +200,7 @@ export default function Home() {
               <Progetti />
             </Stack>
           </Paragraph>
-          <Box
-            id={'free-trial'}
-            mb={'0px'}
-          ></Box>
+          <Box id={"free-trial"} mb={"0px"}></Box>
           <Paragraph
             title="Paghi solo se soddisfatto"
             subtitle="Offriamo l'occasione di mostrarti le nostre competenze e consigliarti le migliori soluzioni per la tua idea con una prova offerta da noi!"
@@ -257,20 +209,22 @@ export default function Home() {
             <Stack
               spacing={["20px", "20px", "20px", "60px"]}
               direction="column"
-              py={['50px', '50px', '50px', '100px']}
-
+              py={["50px", "50px", "50px", "100px"]}
             >
               <StepCards />
             </Stack>
           </Paragraph>
         </BoxWidth>
-
-      </Box >
-      <ConfirmEmailModal isOpen={isOpen} handleCloseButton={() => {
-        setIsOpen(false)
-      }} />
+      </Box>
+      <Paragraph
+        title="Cosa stai aspettando"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
+        className="mt-[100px] md:mt-[150px] lg:mt-[250px]"
+      >
+        <ContactsForm />
+      </Paragraph>
     </>
-
-
   );
-}
+};
+
+export default Home;
