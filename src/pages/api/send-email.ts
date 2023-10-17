@@ -8,7 +8,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     const firstName = typeof req.query.firstName === 'string' ? req.query.firstName : ''
     const lastName = req.query.lastName
 
-
     try {
         const data = await resend.emails.send({
             from: 'Camacode <sales@theblackbird.it>',

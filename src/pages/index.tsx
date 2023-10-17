@@ -1,7 +1,7 @@
 import BoxWidth from "@/components/atoms/BoxWidth";
 import Paragraph from "@/components/atoms/Paragraph";
 import WhiteBox from "@/components/atoms/WhiteBox";
-import { Box, Button, Stack, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, IconButton, Stack, Text, VStack } from "@chakra-ui/react";
 import Image from "next/image";
 import skimming from "../../public/skimming.png";
 import webAppMobile from "../../public/web-app-mobile.png";
@@ -17,6 +17,9 @@ import TechStack from "@/components/organisms/TechStack";
 import Link from "next/link";
 import ConfirmEmailModal from "@/components/molecules/ConfirmEmailModal";
 import { useState } from "react";
+import { ArrowUpIcon } from "@heroicons/react/20/solid";
+import { ArrowUp } from "iconoir-react";
+import ScrollToTop from "@/components/atoms/ScrollToTop";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false)
@@ -39,6 +42,9 @@ export default function Home() {
 
   return (
     <>
+
+      <ScrollToTop />
+
       <Box
         bg={'whiteIce'}
       >
@@ -115,7 +121,7 @@ export default function Home() {
                 borderRadius={"100px"}
                 width={"fit-content"}
                 size={["md", "lg"]}
-                onClick={sendEmail}
+              //onClick={sendEmail}
               >
 
                 <Text textStyle={["h5", "h5", "h4"]} fontWeight={"medium"}>
@@ -205,7 +211,9 @@ export default function Home() {
                 />
               </BoxGrid>
 
-              <WhiteBox>
+              <WhiteBox
+                className="z-10"
+              >
                 <BoxText
                   title="Sviluppo JamStack"
                   subtitle="Jamstack è un'architettura che separa l'esperienza web dai dati e dalla logica aziendale, migliorando flessibilità, scalabilità, prestazioni e manutenibilità. Elimina la dipendenza della logica aziendale dall'esperienza web, consentendo un'architettura componibile in cui la personalizzazione e i servizi di terze parti sono integrati tramite API."
