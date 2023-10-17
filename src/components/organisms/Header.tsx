@@ -118,21 +118,26 @@ const Header = () => {
                                     Progetti
                                 </Box>
                             </Link>
-                            <Button
-                                variant={'black'}
-                                size={'md'}
-                                borderRadius={'10px'}
-                                width={'fit-content'}
+                            <Link
+                                href={'/#contatti'}
                             >
-                                <Text
-                                    textStyle={'h3'}
-                                    fontWeight={'semibold'}
-                                    onClick={closeDrawer}
+                                <Button
+                                    variant={'black'}
+                                    size={'md'}
+                                    borderRadius={'10px'}
+                                    width={'fit-content'}
                                 >
-                                    Contattaci
-                                </Text>
+                                    <Text
+                                        textStyle={'h3'}
+                                        fontWeight={'semibold'}
+                                        onClick={closeDrawer}
+                                    >
+                                        Contattaci
+                                    </Text>
 
-                            </Button>
+                                </Button>
+                            </Link>
+
 
                         </Box>
 
@@ -233,19 +238,24 @@ const Header = () => {
                                 </Text>
                             </Box> */}
                         </HStack>
-                        <Button
-                            variant={'black'}
-                            size={'md'}
-                            borderRadius={'10px'}
+                        <Link
+                            href={'/#contatti'}
                         >
-                            <Text
-                                textStyle={'h4'}
-                                fontWeight={'semibold'}
+                            <Button
+                                variant={'black'}
+                                size={'md'}
+                                borderRadius={'10px'}
                             >
-                                Contattaci
-                            </Text>
+                                <Text
+                                    textStyle={'h4'}
+                                    fontWeight={'semibold'}
+                                >
+                                    Contattaci
+                                </Text>
 
-                        </Button>
+                            </Button>
+                        </Link>
+
                     </nav>
                 </BoxWidth>
                 <Box
