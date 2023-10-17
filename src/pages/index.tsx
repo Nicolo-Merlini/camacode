@@ -111,7 +111,7 @@ export default function Home() {
       <BoxWidth>
         <Paragraph
           title="Servizi"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
+          subtitle="Offriamo servizi di sviluppo web e mobile. Sviluppiamo soluzioni personalizzate e personalizzate."
         >
           <Stack
             spacing={["20px", "20px", "20px", "60px"]}
@@ -153,7 +153,7 @@ export default function Home() {
                 <Image
                   alt="Skimming"
                   src={webAppMobileDevice}
-                  className="flex md:hidden rounded-b-[40px] pr-[35px] lg:pr-[100px]w-[full] lg:w-[250px] xl:w-[300px] mt-[35px] lg:mt-[100px] float-left"
+                  className="flex md:hidden  pr-[35px] lg:pr-[100px]w-[full]  mt-[65px] lg:mt-[100px] float-left"
                 />
               </WhiteBox>
             </BoxGrid>
@@ -203,7 +203,7 @@ export default function Home() {
 
         <Paragraph
           title="Progetti"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
+          subtitle="Grazie alla nostra esperienza nelle migliori aziende e startup italiane, siamo in grado di realizzare le iniziative digitali più ambiziose. Offriamo soluzioni su misura, garantendo sempre elevate performance e scalabilità nel tempo."
         >
 
           <Stack
@@ -220,7 +220,7 @@ export default function Home() {
         ></Box>
         <Paragraph
           title="Paghi solo se soddisfatto"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
+          subtitle="Offriamo l'occasione di provare le nostre competenze con una prova completamente gratuita"
           className="mt-[100px] md:mt-[150px] lg:mt-[200px] "
         >
           <Stack
