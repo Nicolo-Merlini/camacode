@@ -14,6 +14,7 @@ import BoxGrid from "@/components/atoms/BoxGrid";
 import Progetti from "@/components/molecules/Progetti";
 import StepCards from "@/components/organisms/StepCards";
 import TechStack from "@/components/organisms/TechStack";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
         src="/line-green-desktop.png"
         sizes="100vw"
         // Make the image display full width
-        className="hidden xl:flex absolute lg:top-40 xl:top-[155px] 2xl:top-[160px] -z-10"
+        className="hidden xl:flex absolute lg:top-40 xl:top-[190px] 2xl:top-[195px] z-0"
       />
 
       <Image
@@ -39,10 +40,12 @@ export default function Home() {
         src="/line-green-device.png"
         sizes="100vw"
         // Make the image display full width
-        className="hidden more-320:flex more-420:hidden absolute top-[165px] xl:top-36 2xl:top-36 -z-10"
+        className="hidden more-320:flex more-420:hidden absolute top-[210px] 2xl:top-36 z-0"
       />
 
-      <BoxWidth>
+      <BoxWidth
+        className="z-20"
+      >
         <Stack
           spacing={["45px", "45px", "45px", "40px"]}
           direction="column"
@@ -82,18 +85,29 @@ export default function Home() {
             solution architects e designer UX/UI, pronti a concretizzare il tuo
             progetto.
           </Text>
-          <Button
-            variant={["black", "black", "black", "white"]}
-            borderRadius={"100px"}
-            width={"fit-content"}
-            size={["md", "lg"]}
+          <Link
+            href={'/#free-trial'}
           >
-            <Text textStyle={["h5", "h5", "h4"]} fontWeight={"medium"}>
-              Paghi solo se soddisfatto
-            </Text>
-          </Button>
+            <Button
+              variant={["black", "black", "black", "white"]}
+              borderRadius={"100px"}
+              width={"fit-content"}
+              size={["md", "lg"]}
+            >
+
+              <Text textStyle={["h5", "h5", "h4"]} fontWeight={"medium"}>
+                Paghi solo se soddisfatto
+              </Text>
+            </Button>
+          </Link>
+
         </Stack>
       </BoxWidth>
+      <Box
+        id={'servizi'}
+        mb={'100px'}
+      >
+      </Box>
       <BoxWidth>
         <Paragraph
           title="Servizi"
@@ -164,7 +178,7 @@ export default function Home() {
               <BoxText
                 title="E-commerce"
                 subtitle="Specializzati nella creazione di marketplace ed e-commerce, garantiamo libertà di espressione per il tuo brand, un'esperienza utente superiore e flessibilità nella gestione dei canali di vendita."
-                className="hidden lg:flex   lg:w-7/12"
+                className="hidden lg:flex lg:w-7/12"
               />
             </BoxGrid>
 
@@ -179,12 +193,19 @@ export default function Home() {
         </Paragraph>
       </BoxWidth>
       <TechStack></TechStack>
-      <BoxWidth>
+      <Box
+        id={'progetti'}
+        mb={'100px'}
+      >
+      </Box>
+      <BoxWidth
+      >
+
         <Paragraph
           title="Progetti"
           subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
-          className="mt-[100px] md:mt-[150px] lg:mt-[250px]"
         >
+
           <Stack
             spacing={["20px", "20px", "20px", "60px"]}
             direction="column"
@@ -193,10 +214,14 @@ export default function Home() {
             <Progetti />
           </Stack>
         </Paragraph>
+        <Box
+          id={'free-trial'}
+          mb={'0px'}
+        ></Box>
         <Paragraph
           title="Paghi solo se soddisfatto"
           subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
-          className="mt-[100px] md:mt-[150px] lg:mt-[250px] "
+          className="mt-[100px] md:mt-[150px] lg:mt-[200px] "
         >
           <Stack
             spacing={["20px", "20px", "20px", "60px"]}
@@ -209,7 +234,7 @@ export default function Home() {
         </Paragraph>
       </BoxWidth>
 
-    </Box>
+    </Box >
 
   );
 }

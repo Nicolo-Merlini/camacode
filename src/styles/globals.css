@@ -41,3 +41,7 @@ div {
   background: #48fb47;
   color: #423636;
 }
+
+html {
+  scroll-behavior: smooth;
+}
