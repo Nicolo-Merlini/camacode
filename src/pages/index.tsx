@@ -1,7 +1,7 @@
 import BoxWidth from "@/components/atoms/BoxWidth";
 import Paragraph from "@/components/atoms/Paragraph";
 import WhiteBox from "@/components/atoms/WhiteBox";
-import { Box, Button, FormControl, Input, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import skimming from "../../public/skimming.png";
 import webAppMobile from "../../public/web-app-mobile.png";
@@ -15,25 +15,9 @@ import Progetti from "@/components/molecules/Progetti";
 import StepCards from "@/components/organisms/StepCards";
 import TechStack from "@/components/organisms/TechStack";
 import Link from "next/link";
-import ConfirmEmailModal from "@/components/molecules/ConfirmEmailModal";
-import { useState } from "react";
+import ContactsForm from "@/components/molecules/ContactsForm";
 
 export const Home = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const sendEmail = async () => {
-    const firstName = "Nicolo";
-    const lastName = "Rossi";
-    const endpoint = `/api/send-email?firstName=${firstName}&lastName=${lastName}`;
-    try {
-      const response = await fetch(endpoint);
-      const result = await response.json();
-      setIsOpen(true);
-    } catch {
-      console.log("errore");
-    }
-  };
-
   return (
     <>
       <Box bg={"whiteIce"}>
@@ -105,7 +89,6 @@ export const Home = () => {
                 borderRadius={"100px"}
                 width={"fit-content"}
                 size={["md", "lg"]}
-                onClick={sendEmail}
               >
                 <Text textStyle={["h5", "h5", "h4"]} fontWeight={"medium"}>
                   Paghi solo se soddisfatto
@@ -235,76 +218,8 @@ export const Home = () => {
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
         className="mt-[100px] md:mt-[150px] lg:mt-[250px]"
       >
-        <FormControl>
-          <Box className="md:w-1/2 mx-auto mt-10">
-            <Box className="grid md:grid-cols-2 gap-[20px]">
-              <Input
-                type="text"
-                name="nome"
-                placeholder="Nome"
-                borderRadius="15px"
-                size="lg"
-              />
-              <Input
-                type="text"
-                name="surname"
-                placeholder="Cognome"
-                borderRadius="15px"
-                size="lg"
-              />
-              <Input
-                type="email"
-                name="email"
-                placeholder="Email"
-                borderRadius="15px"
-                size="lg"
-              />
-              <Input
-                type="text"
-                name="company"
-                placeholder="Nome società"
-                borderRadius="15px"
-                size="lg"
-              />
-              <Input
-                type="text"
-                name="project"
-                placeholder="Tipologia Progetto"
-                borderRadius="15px"
-                size="lg"
-              />
-              <Input
-                type="text"
-                name="budget"
-                placeholder="budget"
-                borderRadius="15px"
-                size="lg"
-              />
-            </Box>
-            <Input
-              className="mt-[20px]"
-              type="text"
-              name="info"
-              placeholder="Informazioni aggiuntive"
-              borderRadius="15px"
-              size="lg"
-            />
-          </Box>
-          <Button
-            borderRadius="15px"
-            className="my-10 md:w-1/2"
-            variant="black"
-          >
-            Contattaci!
-          </Button>
-        </FormControl>
+        <ContactsForm />
       </Paragraph>
-      <ConfirmEmailModal
-        isOpen={isOpen}
-        handleCloseButton={() => {
-          setIsOpen(false);
-        }}
-      />
     </>
   );
 };
