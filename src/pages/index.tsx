@@ -1,7 +1,7 @@
 import BoxWidth from "@/components/atoms/BoxWidth";
 import Paragraph from "@/components/atoms/Paragraph";
 import WhiteBox from "@/components/atoms/WhiteBox";
-import { Box, Button, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, FormControl, Input, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import skimming from "../../public/skimming.png";
 import webAppMobile from "../../public/web-app-mobile.png";
@@ -230,6 +230,75 @@ export const Home = () => {
           </Paragraph>
         </BoxWidth>
       </Box>
+      <Paragraph
+        title="Cosa stai aspettando"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
+        className="mt-[100px] md:mt-[150px] lg:mt-[250px]"
+      >
+        <FormControl>
+          <Box className="md:w-1/2 mx-auto mt-10">
+            <Box className="grid md:grid-cols-2 gap-[20px]">
+              <Input
+                type="text"
+                name="nome"
+                placeholder="Nome"
+                borderRadius="15px"
+                size="lg"
+              />
+              <Input
+                type="text"
+                name="surname"
+                placeholder="Cognome"
+                borderRadius="15px"
+                size="lg"
+              />
+              <Input
+                type="email"
+                name="email"
+                placeholder="Email"
+                borderRadius="15px"
+                size="lg"
+              />
+              <Input
+                type="text"
+                name="company"
+                placeholder="Nome società"
+                borderRadius="15px"
+                size="lg"
+              />
+              <Input
+                type="text"
+                name="project"
+                placeholder="Tipologia Progetto"
+                borderRadius="15px"
+                size="lg"
+              />
+              <Input
+                type="text"
+                name="budget"
+                placeholder="budget"
+                borderRadius="15px"
+                size="lg"
+              />
+            </Box>
+            <Input
+              className="mt-[20px]"
+              type="text"
+              name="info"
+              placeholder="Informazioni aggiuntive"
+              borderRadius="15px"
+              size="lg"
+            />
+          </Box>
+          <Button
+            borderRadius="15px"
+            className="my-10 md:w-1/2"
+            variant="black"
+          >
+            Contattaci!
+          </Button>
+        </FormControl>
+      </Paragraph>
       <ConfirmEmailModal
         isOpen={isOpen}
         handleCloseButton={() => {
