@@ -50,7 +50,7 @@ export default function Home() {
           src="/line-green-desktop.png"
           sizes="100vw"
           // Make the image display full width
-          className="hidden xl:flex absolute lg:top-40 xl:top-[190px] 2xl:top-[195px] z-0"
+          className="hidden xl:flex absolute lg:top-40 xl:top-[200px] 2xl:top-[210px] z-0"
         />
 
         <Image
@@ -61,7 +61,7 @@ export default function Home() {
           src="/line-green-device.png"
           sizes="100vw"
           // Make the image display full width
-          className="hidden more-320:flex more-420:hidden absolute top-[210px] 2xl:top-36 z-0"
+          className="hidden more-320:flex more-420:hidden absolute top-[220px] z-0"
         />
 
         <BoxWidth
@@ -108,6 +108,7 @@ export default function Home() {
             </Text>
             <Link
               href={'/#free-trial'}
+              className="w-fit"
             >
               <Button
                 variant={["black", "black", "black", "white"]}
