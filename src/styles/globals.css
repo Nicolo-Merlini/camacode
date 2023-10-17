@@ -36,6 +36,16 @@ div {
   -webkit-tap-highlight-color: transparent;
 }
 
+* {
+  box-sizing: border-box;
+}
+.ReactCrop__crop-selection {
+  /* Regole di stile personalizzate */
+
+  border: none !important;
+  opacity: 1;
+}
+
 ::selection {
   /* Change highlight background color and text */
   background: #48fb47;

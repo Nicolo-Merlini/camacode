@@ -12,13 +12,15 @@
     "@chakra-ui/react": "^2.8.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "framer-motion": "^10.16.4",
     "iconoir": "^6.11.0",
     "iconoir-react": "^6.11.0",
     "next": "13.5.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "resend": "^1.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
