@@ -20,7 +20,7 @@ const STEPS: { title: string | any, subtitle: string }[] = [
 const StepCards = () => {
     return (
         <Box
-            className='flex overflow-x-auto lg:overflow-x-hidden  lg:grid lg:grid-cols-3 '
+            className='flex overflow-x-auto lg:overflow-x-hidden  lg:grid lg:grid-cols-3'
             gap={'20px'}
         >
             {STEPS.map((step, index) => {

@@ -5,7 +5,7 @@ import WhiteBox from '../atoms/WhiteBox'
 const SmallCard: FC<{ title: any, index: number, subtitle: string, className?: string }> = ({ title, subtitle, className, index }) => {
     return (
         <WhiteBox
-            className="text-center flex items-center justify-center py-[80px] md:py-[90px] lg:py-[100px] sm:min-h-[250px] relative min-w-[300px] lg:min-w-fit "
+            className="text-center flex items-center justify-center py-[80px] md:py-[90px] lg:py-[100px] sm:min-h-[250px] relative min-w-[300px] lg:min-w-fit mb-4 lg:mb-0"
         >
             <Box
                 display={'flex'}

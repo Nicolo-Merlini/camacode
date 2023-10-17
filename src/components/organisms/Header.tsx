@@ -118,6 +118,21 @@ const Header = () => {
                                     Progetti
                                 </Box>
                             </Link>
+                            <Button
+                                variant={'black'}
+                                size={'md'}
+                                borderRadius={'10px'}
+                                width={'fit-content'}
+                            >
+                                <Text
+                                    textStyle={'h3'}
+                                    fontWeight={'semibold'}
+                                    onClick={closeDrawer}
+                                >
+                                    Contattaci
+                                </Text>
+
+                            </Button>
 
                         </Box>
 

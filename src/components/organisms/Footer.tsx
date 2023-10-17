@@ -16,7 +16,7 @@ const Footer = () => {
     return (
         <Box
             bg={'whiteIce'}
-            color={'gray700'}
+            color={'dark'}
             p={[4, 10, 10]}
             borderTopWidth={'1px'}
             borderColor={'gray300'}
@@ -32,10 +32,10 @@ const Footer = () => {
                     width={['full', '380px']}
                     textAlign={'justify'}
                 >
-                    <img
+                    {/* <img
                         className='h-[94px] w-[94px]'
                         src='https://www.datocms-assets.com/106122/1694361804-screenshot-2023-08-10-alle-19-53-1-1.png'
-                    />
+                    /> */}
                     <Text
                         textStyle={'h4'}
                         fontWeight={'bold'}
