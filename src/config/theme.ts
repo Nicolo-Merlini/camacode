@@ -43,7 +43,7 @@ export const theme_chakraUI = {
     },
     h1TitleMobile: {
       fontSize: "50px",
-      lineHeight: "60px",
+      lineHeight: "55px",
     },
     h1Mobile: {
       fontSize: "2.1rem",
@@ -92,7 +92,7 @@ export const theme_chakraUI = {
           px: "30px",
         },
         lg: {
-          h: ["60px", "70px"],
+          h: ["60px", "75px"],
           fontSize: "20px",
           px: "45px",
         },
@@ -172,5 +172,6 @@ export const theme_chakraUI = {
         },
       },
     },
+
   },
 };

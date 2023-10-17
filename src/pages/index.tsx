@@ -214,15 +214,16 @@ export const Home = () => {
               <StepCards />
             </Stack>
           </Paragraph>
+          <Box id={"contatti"} mb={"50px"}></Box>
+          <Paragraph
+            title="Cosa stai aspettando"
+            subtitle="Compila il form e verrai contattato direttamente da un membro del nostro team."
+          >
+            <ContactsForm />
+          </Paragraph>
         </BoxWidth>
       </Box>
-      <Paragraph
-        title="Cosa stai aspettando"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
-        className="mt-[100px] md:mt-[150px] lg:mt-[250px]"
-      >
-        <ContactsForm />
-      </Paragraph>
+
     </>
   );
 };
