@@ -227,11 +227,13 @@ export const Home = () => {
                 fontWeight={'semibold'}
                 color={'dark'}
                 mx={'20px'}
-                mb={['30px', '30px', '30px', '30px']}
+                mb={['30px', '30px', '30px', '50px']}
               >
                 Vuoi presentarci il tuo progetto?
               </Text>
-              <Link href={"/#free-trial"} className="w-fit">
+              <Link href={"https://calendly.com/camacode/introductory-meeting"}
+                target="_blank"
+                className="w-fit">
                 <Button
                   variant={["black", "black", "black", "green"]}
                   borderRadius={"100px"}
@@ -239,7 +241,7 @@ export const Home = () => {
                   size={["lg", "lg"]}
                 >
                   <Text textStyle={["h4", "h4", "h4"]} fontWeight={"medium"}>
-                    Schedula meeting
+                    Schedula un meeting
                   </Text>
                 </Button>
               </Link>
@@ -248,7 +250,7 @@ export const Home = () => {
 
           <Box id={"contatti"} mb={"200px"}></Box>
           <Paragraph
-            title="Cosa stai aspettando"
+            title="Cosa stai aspettando?"
             subtitle="Compila il form e verrai contattato direttamente da un membro del nostro team."
           >
             <ContactsForm />

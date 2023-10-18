@@ -1,8 +1,9 @@
-import { Box, Button, Input, Select, Textarea } from "@chakra-ui/react";
+import { Box, Button, ButtonGroup, Input, Select, Text, Textarea } from "@chakra-ui/react";
 import ConfirmEmailModal from "./ConfirmEmailModal";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { EmailTemplateProps } from "../email/email-template";
+import Link from "next/link";
 
 export const ContactsForm = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -173,6 +174,7 @@ export const ContactsForm = () => {
             }}
             fontWeight={'500'}
           />
+
           <Button
             type="submit"
             borderRadius="20px"
@@ -192,8 +194,33 @@ export const ContactsForm = () => {
 
             }}
           >
-            Contattaci!
+            Compila il form
           </Button>
+          <Text
+            fontStyle={'italic'}
+            textStyle={'h5'}
+            fontWeight={'500'}
+          >
+            Oppure
+          </Text>
+          <Link
+            href={"https://calendly.com/camacode/introductory-meeting"}
+            target="_blank"
+          >
+            <Button
+              type="button"
+              borderRadius="20px"
+              className="my-[20px]"
+              variant={["green", "green", "green", "white"]}
+              size={'lg'}
+              width={'full'}
+
+            >
+              Schedula un meeting
+            </Button>
+          </Link>
+
+
         </Box>
 
       </form>
