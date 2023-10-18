@@ -18,6 +18,7 @@ const theme = extendTheme(theme_chakraUI)
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={work_sans.className}>
+
       <ChakraProvider theme={theme}>
         <Header />
 
