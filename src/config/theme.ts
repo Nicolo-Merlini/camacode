@@ -101,7 +101,6 @@ export const theme_chakraUI = {
         black: {
           bg: "dark",
           color: "white",
-
           _hover: {
             bg: "hover",
             opacity: 1,
@@ -122,7 +121,6 @@ export const theme_chakraUI = {
           color: "dark",
           borderWidth: "2px",
           borderColor: "dark",
-          borderRadius: "50px",
           _hover: {
             bg: "green",
             borderColor: "green",
@@ -153,7 +151,7 @@ export const theme_chakraUI = {
         green: {
           bg: "green",
           color: "dark",
-          borderRadius: "50px",
+
           _hover: {
             bg: "green",
             borderColor: "green",

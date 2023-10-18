@@ -40,11 +40,11 @@ const ScrollToTop = () => {
                         variant={'black'}
                         aria-label='scroll button'
                         position={'fixed'}
-                        bottom={4}
-                        right={4}
+                        bottom={3}
+                        right={3}
                         size='sm'
-                        width={['65px', '60px', '60px', '60px', '60px']}
-                        height={['65px', '60px', '60px', '60px', '60px']}
+                        width={['60px', '60px', '60px', '60px', '60px']}
+                        height={['60px', '60px', '60px', '60px', '60px']}
                         borderRadius={'full'}
                         icon={<ArrowUp
                             //width={'25px'}
