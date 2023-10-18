@@ -18,6 +18,8 @@ import Link from "next/link";
 import ScrollToTop from "@/components/atoms/ScrollToTop";
 import ContactsForm from "@/components/molecules/ContactsForm";
 import PostMeta from "@/components/organisms/PostMeta";
+import FadeInWhenVisible from "@/components/atoms/FadeInWhenVisible";
+import { motion } from "framer-motion";
 
 export const Home = () => {
 
@@ -48,62 +50,65 @@ export const Home = () => {
           className="hidden more-320:flex more-420:hidden absolute top-[220px] z-0"
         />
 
-        <BoxWidth className="z-20">
-          <Stack
-            spacing={["45px", "45px", "45px", "40px"]}
-            direction="column"
-            minH={"92vh"}
-            className="pt-[60px] md:pt-24 lg:pt-16 2xl:pt-24"
-            color={"dark"}
-          >
-            <Box
-              textStyle={["h1Mobile", "heroMobile", "h1", "hero", "hero90"]}
-              lineHeight={["42px", "65px", "80px", "90px", "100px"]}
-              fontWeight={["semibold", "semibold", "semibold", "600"]}
-              zIndex={10}
-              className="2xl:mb-[65px] xl:mb-[30px]"
+        <FadeInWhenVisible>
+          <BoxWidth className="z-20">
+            <Stack
+              spacing={["45px", "45px", "45px", "40px"]}
+              direction="column"
+              minH={"92vh"}
+              className="pt-[60px] md:pt-24 lg:pt-16 2xl:pt-24"
+              color={"dark"}
             >
-              <Text className="hidden more-420:flex">
-                Trasformiamo le tue <br />
-                Idee in Codice
-              </Text>
-              <Text className="flex more-420:hidden">
-                Trasformiamo le tue Idee in Codice
-              </Text>
-            </Box>
-            <Text
-              textStyle={[
-                "h5Subtitle",
-                "h4Subtitle",
-                "h4Subtitle",
-                "h4Subtitle",
-                "h4Subtitle",
-                "h4Subtitle",
-              ]}
-              fontWeight={"medium"}
-              className="mt-[10px] more-320:mt-[45px] more-420:mt-[0px]  w-11/12 lg:w-9/12"
-            >
-              Partiamo dalle tue esigenze per sviluppare software unici e
-              personalizzati. Ti supportiamo con un team di programmatori,
-              solution architects e designer UX/UI, pronti a concretizzare il
-              tuo progetto.
-            </Text>
-            <Link href={"/#free-trial"} className="w-fit">
-              <Button
-                variant={["black", "black", "black", "white"]}
-                borderRadius={"100px"}
-                width={"fit-content"}
-                size={["md", "lg"]}
+              <Box
+                textStyle={["h1Mobile", "heroMobile", "h1", "hero", "hero90"]}
+                lineHeight={["42px", "65px", "80px", "90px", "100px"]}
+                fontWeight={["semibold", "semibold", "semibold", "600"]}
+                zIndex={10}
+                className="2xl:mb-[65px] xl:mb-[30px]"
               >
-                <Text textStyle={["h5", "h5", "h4"]} fontWeight={"medium"}>
-                  Paghi solo se soddisfatto
+                <Text className="hidden more-420:flex">
+                  Trasformiamo le tue <br />
+                  Idee in Codice
                 </Text>
-              </Button>
-            </Link>
-          </Stack>
-        </BoxWidth>
+                <Text className="flex more-420:hidden">
+                  Trasformiamo le tue Idee in Codice
+                </Text>
+              </Box>
+              <Text
+                textStyle={[
+                  "h5Subtitle",
+                  "h4Subtitle",
+                  "h4Subtitle",
+                  "h4Subtitle",
+                  "h4Subtitle",
+                  "h4Subtitle",
+                ]}
+                fontWeight={"medium"}
+                className="mt-[10px] more-320:mt-[45px] more-420:mt-[0px]  w-11/12 lg:w-9/12"
+              >
+                Partiamo dalle tue esigenze per sviluppare software unici e
+                personalizzati. Ti supportiamo con un team di programmatori,
+                solution architects e designer UX/UI, pronti a concretizzare il
+                tuo progetto.
+              </Text>
+              <Link href={"/#free-trial"} className="w-fit">
+                <Button
+                  variant={["black", "black", "black", "white"]}
+                  borderRadius={"100px"}
+                  width={"fit-content"}
+                  size={["md", "lg"]}
+                >
+                  <Text textStyle={["h5", "h5", "h4"]} fontWeight={"medium"}>
+                    Paghi solo se soddisfatto
+                  </Text>
+                </Button>
+              </Link>
+            </Stack>
+          </BoxWidth>
+        </FadeInWhenVisible>
         <Box id={"servizi"} mb={"100px"}></Box>
         <BoxWidth>
+
           <Paragraph
             title="Servizi"
             subtitle="Offriamo servizi di sviluppo web e mobile per le imprese, progettando soluzioni personalizzate su misura per le loro esigenze."
@@ -113,70 +118,77 @@ export const Home = () => {
               direction="column"
               my={["50px", "50px", "50px", "100px"]}
             >
-              <BoxGrid>
-                <BoxText
-                  title="Web App"
-                  subtitle="Realizziamo Web App esteticamente sorprendenti e altamente funzionali, garantendo elevate performance, sicurezza e scalabilità."
-                  className="lg:hidden py-[50px]"
-                />
-                <WhiteBox className="lg:w-1/2">
-                  <Image
-                    alt="Skimming"
-                    src={skimming}
-                    className="pl-[35px] lg:pl-[100px]w-[full] lg:w-[400px] xl:w-[500px] my-[35px] lg:my-[100px] float-right"
+              <FadeInWhenVisible>
+                <BoxGrid>
+                  <BoxText
+                    title="Web App"
+                    subtitle="Realizziamo Web App esteticamente sorprendenti e altamente funzionali, garantendo elevate performance, sicurezza e scalabilità."
+                    className="lg:hidden py-[50px]"
                   />
-                </WhiteBox>
-                <BoxText
-                  title="Web App"
-                  subtitle="Realizziamo Web App esteticamente sorprendenti e altamente funzionali, garantendo elevate performance, sicurezza e scalabilità."
-                  className="hidden lg:flex lg:w-1/2"
-                />
-              </BoxGrid>
-              <BoxGrid>
-                <BoxText
-                  title="Mobile App"
-                  subtitle="Sviluppiamo app sia per Android che per IOS. Abbiamo esperienza nella costruzione di app aziendali, gestionali e software per startup innovative."
-                  className="py-[50px] lg:w-8/12"
-                />
-                <WhiteBox className=" lg:w-4/12">
-                  <Image
-                    alt="Skimming"
-                    src={webAppMobile}
-                    className="hidden md:flex pr-[35px] lg:pr-[100px]w-[full] lg:w-[250px] xl:w-[300px] mt-[35px] lg:mt-[100px] float-left"
+                  <WhiteBox className="lg:w-1/2">
+                    <Image
+                      alt="Skimming"
+                      src={skimming}
+                      className="pl-[35px] lg:pl-[100px]w-[full] lg:w-[400px] xl:w-[500px] my-[35px] lg:my-[100px] float-right"
+                    />
+                  </WhiteBox>
+                  <BoxText
+                    title="Web App"
+                    subtitle="Realizziamo Web App esteticamente sorprendenti e altamente funzionali, garantendo elevate performance, sicurezza e scalabilità."
+                    className="hidden lg:flex lg:w-1/2"
                   />
+                </BoxGrid>
+              </FadeInWhenVisible>
+              <FadeInWhenVisible>
+                <BoxGrid>
+                  <BoxText
+                    title="Mobile App"
+                    subtitle="Sviluppiamo app sia per Android che per IOS. Abbiamo esperienza nella costruzione di app aziendali, gestionali e software per startup innovative."
+                    className="py-[50px] lg:w-8/12"
+                  />
+                  <WhiteBox className=" lg:w-4/12">
+                    <Image
+                      alt="Skimming"
+                      src={webAppMobile}
+                      className="hidden md:flex pr-[35px] lg:pr-[100px]w-[full] lg:w-[250px] xl:w-[300px] mt-[35px] lg:mt-[100px] float-left"
+                    />
 
-                  <Image
-                    alt="Skimming"
-                    src={webAppMobileDevice}
-                    className="flex md:hidden  pr-[35px] lg:pr-[100px]w-[full]  mt-[65px] lg:mt-[100px] float-left"
-                  />
-                </WhiteBox>
-              </BoxGrid>
-              <BoxGrid>
-                <BoxText
-                  title="E-commerce"
-                  subtitle="Specializzati nella creazione di marketplace ed e-commerce, garantiamo libertà di espressione per il tuo brand, un'esperienza utente superiore e flessibilità nella gestione dei canali di vendita."
-                  className="md:w-11/12  lg:hidden py-[50px]"
-                />
-                <WhiteBox className=" lg:w-5/12">
-                  <Image
-                    alt="Skimming"
-                    src={eCommerce}
-                    className="hidden lg:flex pl-[45px] xl:pl-[100px] lg:w-[600px] xl:w-[850px] my-[35px] lg:my-[100px] float-right"
-                  />
-                  <Image
-                    alt="Skimming"
-                    src={eCommerceMobile}
-                    className="lg:hidden pl-[35px] my-[35px] md:my-[50px] md:w-[600px]  float-right"
-                  />
-                </WhiteBox>
-                <BoxText
-                  title="E-commerce"
-                  subtitle="Specializzati nella creazione di marketplace ed e-commerce, garantiamo libertà di espressione per il tuo brand, un'esperienza utente superiore e flessibilità nella gestione dei canali di vendita."
-                  className="hidden lg:flex lg:w-7/12"
-                />
-              </BoxGrid>
+                    <Image
+                      alt="Skimming"
+                      src={webAppMobileDevice}
+                      className="flex md:hidden  pr-[35px] lg:pr-[100px]w-[full]  mt-[65px] lg:mt-[100px] float-left"
+                    />
+                  </WhiteBox>
+                </BoxGrid>
+              </FadeInWhenVisible>
+              <FadeInWhenVisible>
 
+
+                <BoxGrid>
+                  <BoxText
+                    title="E-commerce"
+                    subtitle="Specializzati nella creazione di marketplace ed e-commerce, garantiamo libertà di espressione per il tuo brand, un'esperienza utente superiore e flessibilità nella gestione dei canali di vendita."
+                    className="md:w-11/12  lg:hidden py-[50px]"
+                  />
+                  <WhiteBox className=" lg:w-5/12">
+                    <Image
+                      alt="Skimming"
+                      src={eCommerce}
+                      className="hidden lg:flex pl-[45px] xl:pl-[100px] lg:w-[600px] xl:w-[850px] my-[35px] lg:my-[100px] float-right"
+                    />
+                    <Image
+                      alt="Skimming"
+                      src={eCommerceMobile}
+                      className="lg:hidden pl-[35px] my-[35px] md:my-[50px] md:w-[600px]  float-right"
+                    />
+                  </WhiteBox>
+                  <BoxText
+                    title="E-commerce"
+                    subtitle="Specializzati nella creazione di marketplace ed e-commerce, garantiamo libertà di espressione per il tuo brand, un'esperienza utente superiore e flessibilità nella gestione dei canali di vendita."
+                    className="hidden lg:flex lg:w-7/12"
+                  />
+                </BoxGrid>
+              </FadeInWhenVisible>
               <WhiteBox className="z-10">
                 <BoxText
                   title="Sviluppo JamStack"
@@ -184,8 +196,10 @@ export const Home = () => {
                   className="w-full  py-[50px] xl:px-[80px]"
                 />
               </WhiteBox>
+
             </Stack>
           </Paragraph>
+
         </BoxWidth>
         <TechStack></TechStack>
         <Box id={"progetti"} mb={"100px"}></Box>
@@ -208,14 +222,16 @@ export const Home = () => {
             subtitle="Offriamo l'occasione di mostrarti le nostre competenze e consigliarti le migliori soluzioni per la tua idea con una prova offerta da noi!"
             className="mt-[100px] md:mt-[150px] lg:mt-[200px] "
           >
-            <Stack
-              spacing={["20px", "20px", "20px", "60px"]}
-              direction="column"
-              pt={["50px", "50px", "50px", "100px"]}
-              pb={["20px", "20px", "20px", "30px"]}
-            >
-              <StepCards />
-            </Stack>
+            <FadeInWhenVisible>
+              <Stack
+                spacing={["20px", "20px", "20px", "60px"]}
+                direction="column"
+                pt={["50px", "50px", "50px", "100px"]}
+                pb={["20px", "20px", "20px", "30px"]}
+              >
+                <StepCards />
+              </Stack>
+            </FadeInWhenVisible>
             <Box id={"contatti"} mb={"30px"}></Box>
             <Box
               borderWidth={"1px"}
@@ -258,7 +274,7 @@ export const Home = () => {
             <ContactsForm />
           </Paragraph>
         </BoxWidth>
-      </Box>
+      </Box >
 
     </>
   );
