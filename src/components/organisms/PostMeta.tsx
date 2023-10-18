@@ -5,7 +5,7 @@ const PostMeta = () => {
     const description = 'Creiamo soluzioni software innovative per una trasformazione digitale di successo. Affidati a noi per realizzare i tuoi progetti.'
     const canonicalUrl = 'www.camacode.com'
     const image = ''
-    const title = 'CAMACODE | Making Impossible, Possible.'
+    const title = 'Camacode | Making Impossible, Possible.'
     return (
         <Head>
             <title>{title}</title>
@@ -27,7 +27,6 @@ const PostMeta = () => {
             <meta property="twitter:title" content={title} />
             <meta property="twitter:description" content={description} />
             {image && < meta property="twitter:image" content={image} />}
-
         </Head>
     )
 }

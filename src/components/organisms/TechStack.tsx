@@ -2,6 +2,10 @@ import { Stack, Box, Text, Grid, GridItem } from "@chakra-ui/react";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import BoxWidth from "../atoms/BoxWidth";
+import { motion } from "framer-motion";
+import { useDebounceEffect } from "../hook/useDebounce";
+import FadeInWhenVisible from "../atoms/FadeInWhenVisible";
+
 
 const TechStack = () => {
   return (
@@ -28,104 +32,105 @@ const TechStack = () => {
         // Make the image display full width
         className="flex md:hidden absolute top-[450px] -z-0"
       />
-
-      <Box
-        bg="gray200"
-        paddingTop={"180px"}
-        paddingBottom={10}
-        marginTop={-250}
-        zIndex={0}
-        width={"full"}
-      >
+      <FadeInWhenVisible>
         <Box
-          id={'tech-stack'}
-          mb={'50px'}
-        ></Box>
-        <BoxWidth>
-          <Text
-            className="text-center mb-10 md:mb-20 z-10"
-            color={"dark"}
-            textStyle={["heroMobile", "hero"]}
-            fontWeight={"semibold"}
-          >
-            Tech Stack
-          </Text>
-          <Box className="w-full md:w-2/3 mx-auto">
-            <Box className="grid grid-cols-3 sm:grid-cols-5 gap-4">
-              {/* row 1*/}
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/react.png"
-              ></TechnologyBox>
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/nextjs.png"
-              ></TechnologyBox>
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/android.png"
-              ></TechnologyBox>
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/swift.png"
-              ></TechnologyBox>
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/nodejs.png"
-              ></TechnologyBox>
-              {/* row 2*/}
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/go.png"
-              ></TechnologyBox>
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/mongodb.png"
-              ></TechnologyBox>
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/typescript.png"
-              ></TechnologyBox>
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/graphql.png"
-              ></TechnologyBox>
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/aws.png"
-              ></TechnologyBox>
-              {/* row 3*/}
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/firebase.png"
-              ></TechnologyBox>
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/figma.png"
-              ></TechnologyBox>
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/mysql.png"
-              ></TechnologyBox>
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/shopify.png"
-              ></TechnologyBox>
-              <TechnologyBox
-                name="prova"
-                image="/TechStackImages/sentry.png"
-              ></TechnologyBox>
+          bg="gray200"
+          paddingTop={"180px"}
+          paddingBottom={10}
+          marginTop={-250}
+          zIndex={0}
+          width={"full"}
+        >
+          <Box
+            id={'tech-stack'}
+            mb={'50px'}
+          ></Box>
+          <BoxWidth>
+            <Text
+              className="text-center mb-10 md:mb-20 z-10"
+              color={"dark"}
+              textStyle={["heroMobile", "hero"]}
+              fontWeight={"semibold"}
+            >
+              Tech Stack
+            </Text>
+            <Box className="w-full md:w-2/3 mx-auto">
+              <Box className="grid grid-cols-3 sm:grid-cols-5 gap-4">
+                {/* row 1*/}
+                <TechnologyBox
+                  name="React"
+                  image="/TechStackImages/react.png"
+                ></TechnologyBox>
+                <TechnologyBox
+                  name="Next.js"
+                  image="/TechStackImages/nextjs.png"
+                ></TechnologyBox>
+                <TechnologyBox
+                  name="Android Studio"
+                  image="/TechStackImages/android.png"
+                ></TechnologyBox>
+                <TechnologyBox
+                  name="Swift"
+                  image="/TechStackImages/swift.png"
+                ></TechnologyBox>
+                <TechnologyBox
+                  name="Node.js"
+                  image="/TechStackImages/nodejs.png"
+                ></TechnologyBox>
+                {/* row 2*/}
+                <TechnologyBox
+                  name="GO"
+                  image="/TechStackImages/go.png"
+                ></TechnologyBox>
+                <TechnologyBox
+                  name="MongoDB"
+                  image="/TechStackImages/mongodb.png"
+                ></TechnologyBox>
+                <TechnologyBox
+                  name="TypeScript"
+                  image="/TechStackImages/typescript.png"
+                ></TechnologyBox>
+                <TechnologyBox
+                  name="GraphQL"
+                  image="/TechStackImages/graphql.png"
+                ></TechnologyBox>
+                <TechnologyBox
+                  name="AWS"
+                  image="/TechStackImages/aws.png"
+                ></TechnologyBox>
+                {/* row 3*/}
+                <TechnologyBox
+                  name="Firebase"
+                  image="/TechStackImages/firebase.png"
+                ></TechnologyBox>
+                <TechnologyBox
+                  name="Figma"
+                  image="/TechStackImages/figma.png"
+                ></TechnologyBox>
+                <TechnologyBox
+                  name="mySQL"
+                  image="/TechStackImages/mysql.png"
+                ></TechnologyBox>
+                <TechnologyBox
+                  name="Shopify"
+                  image="/TechStackImages/shopify.png"
+                ></TechnologyBox>
+                <TechnologyBox
+                  name="Sentry"
+                  image="/TechStackImages/sentry.png"
+                ></TechnologyBox>
+              </Box>
             </Box>
-          </Box>
-          <Text
-            className="text-center mt-10"
-            color={"gray700"}
-            textStyle={"h3"}
-          >
-            e molto Altro!
-          </Text>
-        </BoxWidth>
-      </Box>
+            <Text
+              className="text-center mt-10"
+              color={"gray700"}
+              textStyle={"h3"}
+            >
+              e molto Altro!
+            </Text>
+          </BoxWidth>
+        </Box>
+      </FadeInWhenVisible>
     </Box>
   );
 };
@@ -136,6 +141,8 @@ interface Props {
 }
 
 const TechnologyBox = ({ name, image }: Props) => {
+  const [isHovered, setHovered] = useState(false);
+  const [isImageShowed, setIsImageShowed] = useState(true);
   const boxRef = useRef<any>(null);
   const [boxWidth, setBoxWidth] = useState(0);
 
@@ -158,22 +165,57 @@ const TechnologyBox = ({ name, image }: Props) => {
     };
   }, []);
 
+  useDebounceEffect(async () => {
+
+    if (isImageShowed && isHovered) {
+      setIsImageShowed(false)
+    }
+  },
+    350,
+    [isHovered],
+  )
+
+
 
   const padding = (boxWidth * 40) / 100;
 
   return (
-    <Box
-      className="bg-white flex items-center justify-center rounded-[30px] z-10"
-      height={boxWidth + "px"}
-      ref={boxRef}
+    <motion.div
+      className="block z-20"
+      animate={{
+        rotateY: isImageShowed ? 360 : 0,
+      }}
+      transition={{ duration: 0.5 }} // L'effetto durerà 1 secondo
     >
-      <Image
-        src={image}
-        width={boxWidth - padding}
-        height={boxWidth - padding}
-        alt="Picture of the author"
-      />
-    </Box>
+      <Box
+        className="bg-white flex cursor-pointer items-center justify-center text-center rounded-[30px] z-10"
+        height={boxWidth + "px"}
+        ref={boxRef}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => {
+          setHovered(false)
+          setIsImageShowed(true)
+        }}
+      >
+        {isImageShowed ? (<Image
+          src={image}
+          width={boxWidth - padding}
+          height={boxWidth - padding}
+          alt="Picture of the author"
+          className="transform scale-x-[-1]"
+        />)
+          : (
+            <Text
+              textStyle={['h5', 'h5', 'h5', 'h4', 'h4', 'h4']}
+              fontWeight={'500'}
+            >
+              {name}
+            </Text>
+          )
+        }
+      </Box>
+    </motion.div>
+
   );
 };
 
