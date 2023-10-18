@@ -74,7 +74,7 @@ const Footer = () => {
                         mt={4}
                         fontWeight={'thin'}
                     >
-                        Porta la tua azienda ad un livello superiore
+                        Making Impossible, Possible.
                     </Text>
                 </Box>
 
@@ -83,7 +83,7 @@ const Footer = () => {
                     fontWeight={'thin'}
                     className='my-auto mb-0'
                 >
-                    © 2023 CAMACODE | P.I. 000000000
+                    © 2023 CAMACODE | P.I. 11171770966
                 </Text>
             </Box>
         </Box>
