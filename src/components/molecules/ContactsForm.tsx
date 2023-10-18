@@ -200,6 +200,7 @@ export const ContactsForm = () => {
             fontStyle={'italic'}
             textStyle={'h5'}
             fontWeight={'500'}
+            color={'gray700'}
           >
             Oppure
           </Text>
