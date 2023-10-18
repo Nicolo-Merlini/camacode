@@ -5,7 +5,7 @@ import { Box, Text } from '@chakra-ui/react'
 const BoxText: FC<{ title: string, subtitle: string, className?: string }> = ({ title, subtitle, className }) => {
     return (
         <WhiteBox
-            className={`${className ? className : ""} text-center flex items-center justify-center px-[35px]
+            className={`${className ? className : ""} text-center flex items-center justify-center px-[35px] lg:px-[60px]
             `}
         >
             <Box>

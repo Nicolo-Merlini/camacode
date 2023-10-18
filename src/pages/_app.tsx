@@ -4,6 +4,7 @@ import { Work_Sans } from 'next/font/google'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import { theme_chakraUI } from '@/config/theme';
 import Header from '@/components/organisms/Header';
+import Footer from '@/components/organisms/Footer';
 
 
 const work_sans = Work_Sans({
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Header />
 
         <Component  {...pageProps} />
+        <Footer />
       </ChakraProvider>
     </main>
   )
