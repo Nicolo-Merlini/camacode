@@ -214,6 +214,7 @@ export const Home = () => {
             >
               <StepCards />
             </Stack>
+            <Box id={"contatti"} mb={"30px"}></Box>
             <Box
               borderWidth={"1px"}
               borderColor={"gray00"}
@@ -248,7 +249,6 @@ export const Home = () => {
             </Box>
           </Paragraph>
 
-          <Box id={"contatti"} mb={"200px"}></Box>
           <Paragraph
             title="Cosa stai aspettando?"
             subtitle="Compila il form e verrai contattato direttamente da un membro del nostro team."
