@@ -17,12 +17,14 @@ import TechStack from "@/components/organisms/TechStack";
 import Link from "next/link";
 import ScrollToTop from "@/components/atoms/ScrollToTop";
 import ContactsForm from "@/components/molecules/ContactsForm";
+import PostMeta from "@/components/organisms/PostMeta";
 
 export const Home = () => {
+
   return (
     <>
+      <PostMeta />
       <ScrollToTop />
-
       <Box bg={"whiteIce"}>
         <Image
           width={3000}
