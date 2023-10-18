@@ -17,7 +17,7 @@ const Progetti = () => {
             <BoxGrid>
                 <BoxText
                     title="Skimming BPE"
-                    subtitle="Piattaforma multifunzionale dedicata al settore edilizio in grado di gestire gare di appalto private, garantendo una collabborazione totale tra committenti, imprese e progettisti."
+                    subtitle="Piattaforma multifunzionale dedicata al settore edilizio, in grado di gestire gare qualunque tipologie di gara d'appalto, mettendo in contatto committenti, imprese e progettisti."
                     className="py-[40px] md:py-[50px] w-full md:w-1/2"
                 />
                 <WhiteBox
@@ -40,7 +40,7 @@ const Progetti = () => {
             <BoxGrid>
                 <BoxText
                     title="Indice"
-                    subtitle="Headless e-commerce creato per vendere un’esclusiva selezione dei migliori occhiali al mondo."
+                    subtitle="e-commerce headless creato per il mondo degli ochiali e non solo, in grado di offrire una esperienza di acquisto unica al cliente."
                     className="py-[40px] md:py-[50px] w-full md:w-1/2"
                 />
                 <WhiteBox
@@ -63,7 +63,7 @@ const Progetti = () => {
             <BoxGrid>
                 <BoxText
                     title="Veplo"
-                    subtitle="Marketplace di abbigliamento dedicato ai migliori brand emergenti italiani, in grado di permettere una vendita diretta di capi e accessori tra brand e clienti"
+                    subtitle="Marketplace dedicato ai migliori brand emergenti italiani, in grado di permettere una vendita diretta di capi d'abbigliamento e accessori tra brand e clienti."
                     className="py-[40px] md:py-[50px] w-full md:w-1/2"
                 />
                 <WhiteBox
