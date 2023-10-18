@@ -202,7 +202,6 @@ const TechnologyBox = ({ name, image }: Props) => {
           width={boxWidth - padding}
           height={boxWidth - padding}
           alt="Picture of the author"
-          className="transform scale-x-[-1]"
         />)
           : (
             <Text
