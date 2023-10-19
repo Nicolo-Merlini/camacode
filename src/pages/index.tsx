@@ -20,15 +20,27 @@ import ContactsForm from "@/components/molecules/ContactsForm";
 import PostMeta from "@/components/organisms/PostMeta";
 import FadeInWhenVisible from "@/components/atoms/FadeInWhenVisible";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsOpen(true);
+    }, 350);
+  }, [])
 
   return (
     <>
+
+
       <PostMeta />
       <ScrollToTop />
       <Box bg={"whiteIce"}>
-        <Image
+
+
+        {isOpen && <Image
           width={3000}
           height={500}
           priority
@@ -36,10 +48,11 @@ export const Home = () => {
           src="/line-green-desktop.png"
           sizes="100vw"
           // Make the image display full width
-          className="hidden xl:flex absolute lg:top-40 xl:top-[200px] 2xl:top-[210px] z-0"
-        />
+          className={`hidden xl:flex absolute lg:top-40 xl:top-[200px] 2xl:top-[210px] z-0
+            }`}
+        />}
 
-        <Image
+        {isOpen && <Image
           width={3000}
           height={100}
           priority
@@ -48,7 +61,7 @@ export const Home = () => {
           sizes="100vw"
           // Make the image display full width
           className="hidden more-320:flex more-420:hidden absolute top-[220px] z-0"
-        />
+        />}
 
         <FadeInWhenVisible>
           <BoxWidth className="z-20">
@@ -96,9 +109,9 @@ export const Home = () => {
                   variant={["black", "black", "black", "white"]}
                   borderRadius={"100px"}
                   width={"fit-content"}
-                  size={["md", "lg"]}
+                  size={["md", "lg", "lg"]}
                 >
-                  <Text textStyle={["h5", "h5", "h4"]} fontWeight={"medium"}>
+                  <Text textStyle={["h5", "h4", "h4"]} fontWeight={"medium"}>
                     Paghi solo se soddisfatto
                   </Text>
                 </Button>
@@ -118,7 +131,9 @@ export const Home = () => {
               direction="column"
               my={["50px", "50px", "50px", "100px"]}
             >
-              <FadeInWhenVisible>
+              <FadeInWhenVisible
+                initialStateY={'5%'}
+              >
                 <BoxGrid>
                   <BoxText
                     title="Web App"
@@ -139,7 +154,9 @@ export const Home = () => {
                   />
                 </BoxGrid>
               </FadeInWhenVisible>
-              <FadeInWhenVisible>
+              <FadeInWhenVisible
+                initialStateY={'5%'}
+              >
                 <BoxGrid>
                   <BoxText
                     title="Mobile App"
@@ -161,7 +178,9 @@ export const Home = () => {
                   </WhiteBox>
                 </BoxGrid>
               </FadeInWhenVisible>
-              <FadeInWhenVisible>
+              <FadeInWhenVisible
+                initialStateY={'5%'}
+              >
 
 
                 <BoxGrid>
@@ -222,7 +241,9 @@ export const Home = () => {
             subtitle="Offriamo l'occasione di mostrarti le nostre competenze e consigliarti le migliori soluzioni per la tua idea con una prova offerta da noi!"
             className="mt-[100px] md:mt-[150px] lg:mt-[200px] "
           >
-            <FadeInWhenVisible>
+            <FadeInWhenVisible
+              initialStateY={'5%'}
+            >
               <Stack
                 spacing={["20px", "20px", "20px", "60px"]}
                 direction="column"
