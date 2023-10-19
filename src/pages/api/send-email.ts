@@ -20,8 +20,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   try {
     const data = await resend.emails.send({
-      from: "Camacode <sales@theblackbird.it>",
-      to: ["nicolo.merlini@gmail.com", "pignataro.giovanni@hotmail.com"],
+      from: "Richiesta contatto <sales@camacode.com>",
+      to: ["camacode.consulting@gmail.com"],
       subject: "Hello world",
       react: EmailTemplate({
         firstName,
