@@ -15,7 +15,9 @@ import FadeInWhenVisible from '../atoms/FadeInWhenVisible'
 const Progetti = () => {
     return (
         <>
-            <FadeInWhenVisible>
+            <FadeInWhenVisible
+                initialStateY={'5%'}
+            >
                 <BoxGrid>
                     <BoxText
                         title="Skimming BPE"
@@ -40,7 +42,9 @@ const Progetti = () => {
 
                 </BoxGrid>
             </FadeInWhenVisible>
-            <FadeInWhenVisible>
+            <FadeInWhenVisible
+                initialStateY={'5%'}
+            >
                 <BoxGrid>
                     <BoxText
                         title="Indice"
@@ -65,7 +69,9 @@ const Progetti = () => {
 
                 </BoxGrid>
             </FadeInWhenVisible>
-            <FadeInWhenVisible>
+            <FadeInWhenVisible
+                initialStateY={'5%'}
+            >
                 <BoxGrid>
                     <BoxText
                         title="Veplo"

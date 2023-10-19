@@ -32,105 +32,105 @@ const TechStack = () => {
         // Make the image display full width
         className="flex md:hidden absolute top-[450px] -z-0"
       />
-      <FadeInWhenVisible>
+
+      <Box
+        bg="gray200"
+        paddingTop={"180px"}
+        paddingBottom={10}
+        marginTop={-250}
+        zIndex={0}
+        width={"full"}
+      >
         <Box
-          bg="gray200"
-          paddingTop={"180px"}
-          paddingBottom={10}
-          marginTop={-250}
-          zIndex={0}
-          width={"full"}
-        >
-          <Box
-            id={'tech-stack'}
-            mb={'50px'}
-          ></Box>
-          <BoxWidth>
-            <Text
-              className="text-center mb-10 md:mb-20 z-10"
-              color={"dark"}
-              textStyle={["heroMobile", "hero"]}
-              fontWeight={"semibold"}
-            >
-              Tech Stack
-            </Text>
-            <Box className="w-full md:w-2/3 mx-auto">
-              <Box className="grid grid-cols-3 sm:grid-cols-5 gap-4">
-                {/* row 1*/}
-                <TechnologyBox
-                  name="React"
-                  image="/TechStackImages/react.png"
-                ></TechnologyBox>
-                <TechnologyBox
-                  name="Next.js"
-                  image="/TechStackImages/nextjs.png"
-                ></TechnologyBox>
-                <TechnologyBox
-                  name="Android Studio"
-                  image="/TechStackImages/android.png"
-                ></TechnologyBox>
-                <TechnologyBox
-                  name="Swift"
-                  image="/TechStackImages/swift.png"
-                ></TechnologyBox>
-                <TechnologyBox
-                  name="Node.js"
-                  image="/TechStackImages/nodejs.png"
-                ></TechnologyBox>
-                {/* row 2*/}
-                <TechnologyBox
-                  name="GO"
-                  image="/TechStackImages/go.png"
-                ></TechnologyBox>
-                <TechnologyBox
-                  name="MongoDB"
-                  image="/TechStackImages/mongodb.png"
-                ></TechnologyBox>
-                <TechnologyBox
-                  name="TypeScript"
-                  image="/TechStackImages/typescript.png"
-                ></TechnologyBox>
-                <TechnologyBox
-                  name="GraphQL"
-                  image="/TechStackImages/graphql.png"
-                ></TechnologyBox>
-                <TechnologyBox
-                  name="AWS"
-                  image="/TechStackImages/aws.png"
-                ></TechnologyBox>
-                {/* row 3*/}
-                <TechnologyBox
-                  name="Firebase"
-                  image="/TechStackImages/firebase.png"
-                ></TechnologyBox>
-                <TechnologyBox
-                  name="Figma"
-                  image="/TechStackImages/figma.png"
-                ></TechnologyBox>
-                <TechnologyBox
-                  name="mySQL"
-                  image="/TechStackImages/mysql.png"
-                ></TechnologyBox>
-                <TechnologyBox
-                  name="Shopify"
-                  image="/TechStackImages/shopify.png"
-                ></TechnologyBox>
-                <TechnologyBox
-                  name="Sentry"
-                  image="/TechStackImages/sentry.png"
-                ></TechnologyBox>
-              </Box>
+          id={'tech-stack'}
+          mb={'50px'}
+        ></Box>
+        <BoxWidth>
+          <Text
+            className="text-center mb-10 md:mb-20 z-10"
+            color={"dark"}
+            textStyle={["heroMobile", "hero"]}
+            fontWeight={"semibold"}
+          >
+            Tech Stack
+          </Text>
+          <Box className="w-full md:w-2/3 mx-auto">
+            <Box className="grid grid-cols-3 sm:grid-cols-5 gap-4">
+              {/* row 1*/}
+              <TechnologyBox
+                name="React"
+                image="/TechStackImages/react.png"
+              ></TechnologyBox>
+              <TechnologyBox
+                name="Next.js"
+                image="/TechStackImages/nextjs.png"
+              ></TechnologyBox>
+              <TechnologyBox
+                name="Android Studio"
+                image="/TechStackImages/android.png"
+              ></TechnologyBox>
+              <TechnologyBox
+                name="Swift"
+                image="/TechStackImages/swift.png"
+              ></TechnologyBox>
+              <TechnologyBox
+                name="Node.js"
+                image="/TechStackImages/nodejs.png"
+              ></TechnologyBox>
+              {/* row 2*/}
+              <TechnologyBox
+                name="GO"
+                image="/TechStackImages/go.png"
+              ></TechnologyBox>
+              <TechnologyBox
+                name="MongoDB"
+                image="/TechStackImages/mongodb.png"
+              ></TechnologyBox>
+              <TechnologyBox
+                name="TypeScript"
+                image="/TechStackImages/typescript.png"
+              ></TechnologyBox>
+              <TechnologyBox
+                name="GraphQL"
+                image="/TechStackImages/graphql.png"
+              ></TechnologyBox>
+              <TechnologyBox
+                name="AWS"
+                image="/TechStackImages/aws.png"
+              ></TechnologyBox>
+              {/* row 3*/}
+              <TechnologyBox
+                name="Firebase"
+                image="/TechStackImages/firebase.png"
+              ></TechnologyBox>
+              <TechnologyBox
+                name="Figma"
+                image="/TechStackImages/figma.png"
+              ></TechnologyBox>
+              <TechnologyBox
+                name="mySQL"
+                image="/TechStackImages/mysql.png"
+              ></TechnologyBox>
+              <TechnologyBox
+                name="Shopify"
+                image="/TechStackImages/shopify.png"
+              ></TechnologyBox>
+              <TechnologyBox
+                name="Sentry"
+                image="/TechStackImages/sentry.png"
+              ></TechnologyBox>
             </Box>
-            <Text
-              className="text-center mt-10"
-              color={"gray700"}
-              textStyle={"h3"}
-            >
-              e molto Altro!
-            </Text>
-          </BoxWidth>
-        </Box>
-      </FadeInWhenVisible>
+          </Box>
+          <Text
+            className="text-center mt-10"
+            color={"gray700"}
+            textStyle={"h3"}
+          >
+            e molto Altro!
+          </Text>
+        </BoxWidth>
+      </Box>
+
     </Box>
   );
 };
@@ -171,7 +171,7 @@ const TechnologyBox = ({ name, image }: Props) => {
       setIsImageShowed(false)
     }
   },
-    350,
+    400,
     [isHovered],
   )
 
@@ -182,10 +182,18 @@ const TechnologyBox = ({ name, image }: Props) => {
   return (
     <motion.div
       className="block z-20"
+      initial="hidden"
+      whileInView="visible"
       animate={{
         rotateY: isImageShowed ? 360 : 0,
       }}
-      transition={{ duration: 0.5 }} // L'effetto durerà 1 secondo
+      viewport={{ once: true }}
+      transition={{ duration: 0.9, delay: 0 }}
+
+      variants={{
+        visible: { opacity: 1, scale: 1, y: 0 },
+        hidden: { opacity: 0, scale: 0.99, y: 0 }
+      }}
     >
       <Box
         className="bg-white flex cursor-pointer items-center justify-center text-center rounded-[30px] z-10"

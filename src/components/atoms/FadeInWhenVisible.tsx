@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React, { FC } from 'react'
 
-const FadeInWhenVisible: FC<{ children: React.ReactNode }> = ({ children }) => {
+const FadeInWhenVisible: FC<{ children: React.ReactNode, initialStateY?: string }> = ({ children, initialStateY }) => {
     return (
         <motion.div
 
@@ -9,9 +9,10 @@ const FadeInWhenVisible: FC<{ children: React.ReactNode }> = ({ children }) => {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
+
             variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0.99 }
+                visible: { opacity: 1, scale: 1, y: 0 },
+                hidden: { opacity: 0, scale: 0.99, y: initialStateY ? initialStateY : 0 }
             }}
         >
             {children}
