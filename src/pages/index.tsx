@@ -19,8 +19,9 @@ import ScrollToTop from "@/components/atoms/ScrollToTop";
 import ContactsForm from "@/components/molecules/ContactsForm";
 import PostMeta from "@/components/organisms/PostMeta";
 import FadeInWhenVisible from "@/components/atoms/FadeInWhenVisible";
-import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Logo from '../../public/Logo-Camacode.svg'
+
 
 export const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,14 +65,15 @@ export const Home = () => {
         />}
 
         <FadeInWhenVisible>
-          <BoxWidth className="z-20">
+          <BoxWidth className="z-20 pt-[60px] md:pt-24 lg:pt-16 2xl:pt-24">
             <Stack
               spacing={["45px", "45px", "45px", "40px"]}
               direction="column"
               minH={"92vh"}
-              className="pt-[60px] md:pt-24 lg:pt-16 2xl:pt-24"
+              className=""
               color={"dark"}
             >
+
               <Box
                 textStyle={["h1Mobile", "heroMobile", "h1", "hero", "hero90"]}
                 lineHeight={["42px", "65px", "80px", "90px", "100px"]}
@@ -169,7 +171,6 @@ export const Home = () => {
                       src={webAppMobile}
                       className="hidden md:flex pr-[35px] lg:pr-[100px]w-[full] lg:w-[250px] xl:w-[300px] mt-[35px] lg:mt-[100px] float-left"
                     />
-
                     <Image
                       alt="Skimming"
                       src={webAppMobileDevice}

@@ -150,7 +150,7 @@ export const ContactsForm = () => {
                 setBudget(e.target.value)
               }}
             >
-              <option value='{< 10.000€'>{'< 10.000€'}</option>
+              <option value='< 10.000€'>{'< 10.000€'}</option>
               <option value='da 10.000€ a 30.000€'>da 10.000€ a 30.000€</option>
               <option value='da 30.000€ a 100.000€'>{'da 30.000€ a 100.000€'}</option>
               <option value='> 100.000'>{'> 100.000'}</option>

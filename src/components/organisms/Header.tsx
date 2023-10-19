@@ -4,6 +4,8 @@ import BoxWidth from '../atoms/BoxWidth'
 import { Bars3Icon } from '@heroicons/react/20/solid'
 import { Cancel } from 'iconoir-react'
 import Link from 'next/link'
+import Image from 'next/image'
+import Logo from '../../../public/Logo-Camacode.svg'
 
 const Header = () => {
     const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false)
@@ -150,6 +152,8 @@ const Header = () => {
                 >
                     <nav
                         className="flex  mx-0 justify-between" >
+
+
                         <HStack spacing='50px'>
                             <Link
                                 href='/'
@@ -262,7 +266,11 @@ const Header = () => {
                     className='flex lg:hidden justify-between p-[20px]'
                 >
                     <Box>
-
+                        <Image
+                            src={Logo}
+                            alt='logo'
+                            className='h-[35px] w-fit my-auto'
+                        />
                     </Box>
                     <Box
                         _active={{
