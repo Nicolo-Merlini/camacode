@@ -49,7 +49,7 @@ export const Home = () => {
           src="/line-green-desktop.png"
           sizes="100vw"
           // Make the image display full width
-          className={`hidden xl:flex absolute lg:top-40 xl:top-[200px] 2xl:top-[210px] z-0
+          className={`hidden xl:flex absolute lg:top-40 xl:top-[200px] 2xl:top-[200px] z-0
             }`}
         />}
 
