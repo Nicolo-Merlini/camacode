@@ -189,21 +189,21 @@ const TechnologyBox = ({ name, image }: Props) => {
       }}
       viewport={{ once: true }}
       transition={{ duration: 0.9, delay: 0 }}
-
       variants={{
         visible: { opacity: 1, scale: 1, y: 0 },
         hidden: { opacity: 0, scale: 0.99, y: 0 }
+      }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => {
+        setHovered(false)
+        setIsImageShowed(true)
       }}
     >
       <Box
         className="bg-white flex cursor-pointer items-center justify-center text-center rounded-[30px] z-10"
         height={boxWidth + "px"}
         ref={boxRef}
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => {
-          setHovered(false)
-          setIsImageShowed(true)
-        }}
+
       >
         {isImageShowed ? (<Image
           src={image}

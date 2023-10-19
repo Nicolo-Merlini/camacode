@@ -287,13 +287,16 @@ export const Home = () => {
               </Link>
             </Box>
           </Paragraph>
+          <FadeInWhenVisible>
+            <Paragraph
+              title="Cosa stai aspettando?"
+              subtitle="Compila il form e verrai contattato direttamente da un membro del nostro team."
+            >
 
-          <Paragraph
-            title="Cosa stai aspettando?"
-            subtitle="Compila il form e verrai contattato direttamente da un membro del nostro team."
-          >
-            <ContactsForm />
-          </Paragraph>
+              <ContactsForm />
+            </Paragraph>
+          </FadeInWhenVisible>
+
         </BoxWidth>
       </Box >
 
