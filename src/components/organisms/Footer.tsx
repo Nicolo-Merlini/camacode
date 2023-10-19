@@ -1,6 +1,8 @@
 import { Box, SimpleGrid, Stack, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 import React, { ReactNode, memo } from 'react'
+import Logo from '../../../public/Logo-Camacode.svg'
+import Image from 'next/image'
 
 const ListHeader = ({ children }: { children: ReactNode }) => {
     return (
@@ -25,24 +27,25 @@ const Footer = () => {
                 display={['grid', 'grid', 'grid', 'flex']}
                 gap={[10, 10, 10, 0]}
                 justifyContent={'space-between'}
-
                 pb={8}
             >
                 <Box
                     width={['full', '380px']}
                     textAlign={'justify'}
+                    mt={3}
                 >
-                    {/* <img
-                        className='h-[94px] w-[94px]'
-                        src='https://www.datocms-assets.com/106122/1694361804-screenshot-2023-08-10-alle-19-53-1-1.png'
-                    /> */}
-                    <Text
+                    <Image
+                        className='h-[45px] md:h-[60px] w-fit'
+                        src={Logo}
+                        alt='Logo Camacode'
+                    />
+                    {/* <Text
                         textStyle={'h4'}
                         fontWeight={'bold'}
                         mt={6}
                     >
                         CAMACODE
-                    </Text>
+                    </Text> */}
                     <Text
                         textStyle={'h6'}
                         mt={4}
