@@ -77,7 +77,7 @@ const Footer = () => {
                         mt={4}
                         fontWeight={'thin'}
                     >
-                        Making Impossible, Possible.
+                        Making the Impossible, Possible.
                     </Text>
                 </Box>
 
