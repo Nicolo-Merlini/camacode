@@ -239,7 +239,7 @@ export const Home = () => {
           <Box id={"free-trial"} mb={"0px"}></Box>
           <Paragraph
             title="Paghi solo se soddisfatto"
-            subtitle="Offriamo l'occasione di mostrarti le nostre competenze e consigliarti le migliori soluzioni per la tua idea con una prova offerta da noi!"
+            subtitle="Prova i nostri servizi attraverso una demo gratuita del tuo progetto e decidi solo dopo se continuare"
             className="mt-[100px] md:mt-[150px] lg:mt-[200px] "
           >
             <FadeInWhenVisible

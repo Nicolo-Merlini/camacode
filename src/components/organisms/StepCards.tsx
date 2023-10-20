@@ -5,15 +5,15 @@ import SmallCard from '../molecules/SmallCard'
 const STEPS: { title: string | any, subtitle: string }[] = [
     {
         title: 'Progetto',
-        subtitle: 'Visioniamo insieme la tua idea e finalizziamo una prima proposta'
+        subtitle: 'Visioniamo insieme il progetto e finalizziamo una prima proposta'
     },
     {
         title: `Demo <span class="underline decoration-[4px] underline-offset-[5px] sm:underline-offset-[9px] decoration-[#48FB47]">gratuita</span>`,
-        subtitle: 'realizziamo una demo gratuita in pochi giorni per mostrarti la fattibilità della tua idea'
+        subtitle: 'realizziamo una demo gratuita in pochi giorni'
     },
     {
         title: 'Contratto',
-        subtitle: 'Conclusione del contratto e continuazione dello sviluppo del progetto'
+        subtitle: 'Conclusione del contratto e continuazione degli sviluppi'
     },
 ]
 
