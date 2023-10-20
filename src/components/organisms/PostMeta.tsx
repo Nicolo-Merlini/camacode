@@ -5,7 +5,7 @@ const PostMeta = () => {
     const description = 'Creiamo soluzioni software innovative per una trasformazione digitale di successo. Affidati a noi per realizzare i tuoi progetti.'
     const canonicalUrl = 'www.camacode.com'
     const image = ''
-    const title = 'Camacode | Making Impossible, Possible.'
+    const title = 'Camacode | Making the Impossible, Possible.'
     return (
         <Head>
             <title>{title}</title>
