@@ -212,10 +212,9 @@ export const ContactsForm = () => {
               type="button"
               borderRadius="20px"
               className="my-[20px]"
-              variant={["green", "green", "green", "white"]}
+              variant={["white", "white", "white"]}
               size={'lg'}
               width={'full'}
-
             >
               Schedula un meeting
             </Button>

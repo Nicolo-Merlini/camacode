@@ -277,6 +277,7 @@ const Header = () => {
                             transform: 'scale(0.98)',
                         }}
                         onClick={() => setIsDrawerOpen(true)}
+                        cursor={'pointer'}
                     >
                         <Bars3Icon
                             className='w-10 h-10'

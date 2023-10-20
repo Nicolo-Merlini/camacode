@@ -162,7 +162,7 @@ export const Home = () => {
                 <BoxGrid>
                   <BoxText
                     title="Mobile App"
-                    subtitle="Sviluppiamo app sia per Android che per IOS. Abbiamo esperienza nella costruzione di app aziendali, gestionali e software per startup innovative."
+                    subtitle="Sviluppiamo app sia per Android che per IOS, con un focus sulla implementazione di app aziendali, gestionali e software per startup innovative."
                     className="py-[50px] lg:w-8/12"
                   />
                   <WhiteBox className=" lg:w-4/12">
@@ -239,7 +239,7 @@ export const Home = () => {
           <Box id={"free-trial"} mb={"0px"}></Box>
           <Paragraph
             title="Paghi solo se soddisfatto"
-            subtitle="Prova i nostri servizi attraverso una demo gratuita del tuo progetto e decidi solo dopo se continuare"
+            subtitle="Prova i nostri servizi attraverso una demo gratuita del tuo progetto e decidi solo dopo se continuare."
             className="mt-[100px] md:mt-[150px] lg:mt-[200px] "
           >
             <FadeInWhenVisible
