@@ -206,13 +206,13 @@ const TechnologyBox = ({ name, image }: Props) => {
         className="bg-white flex cursor-pointer items-center justify-center text-center rounded-[30px] z-10"
         height={boxWidth + "px"}
         ref={boxRef}
-
       >
         {isImageShowed ? (<Image
           src={image}
           width={boxWidth - padding}
           height={boxWidth - padding}
           alt="Picture of the author"
+          className="scale-x-[-1]"
         />)
           : (
             <Text
